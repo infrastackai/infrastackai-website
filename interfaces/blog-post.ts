@@ -1,6 +1,7 @@
 interface IAuthor {
   name: string;
   picture: string;
+  title: string;
 }
 
 export default interface IBlogPost {

@@ -17,6 +17,7 @@ export const blog = defineCollections({
     author: z.object({
       name: z.string(),
       picture: z.string(),
+      title: z.string(),
     }),
     coverImage: z.string(),
     excerpt: z.string(),
