@@ -33,7 +33,7 @@ export default async function Page(props: {
           title={heroPost.data.title}
           coverImage={heroPost.data.coverImage}
           excerpt={heroPost.data.excerpt}
-          date={heroPost.data.date}
+          date={heroPost.data.lastModified}
           author={heroPost.data.author}
           slug={heroPost.slugs[0]}
         />
@@ -43,7 +43,7 @@ export default async function Page(props: {
               posts={pages.map((page) => ({
                 title: page.data.title,
                 coverImage: page.data.coverImage,
-                date: page.data.date,
+                date: page.data.lastModified,
                 excerpt: page.data.excerpt,
                 author: page.data.author,
                 slug: page.slugs[0],
@@ -59,7 +59,6 @@ export default async function Page(props: {
   if (!page) notFound();
 
   const MDX = page.data.body;
-
   return (
     <DocsPage
       tableOfContent={{

@@ -21,7 +21,6 @@ export const blog = defineCollections({
     }),
     coverImage: z.string(),
     excerpt: z.string(),
-    date: z.string().date().or(z.date()).optional(),
   }),
 });
 

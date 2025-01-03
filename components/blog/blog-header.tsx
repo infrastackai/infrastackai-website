@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { Avatar, AvatarFallback, AvatarImage } from "../ui/avatar";
 import generateAvatarFallback from "@/utils/generate-avatar-fallback";
+import DateFormatter from "./date-formatter";
 
 export const BlogHeader = ({
   author,
@@ -14,7 +15,7 @@ export const BlogHeader = ({
   authorPicture: string;
   title: string;
   description?: string;
-  date?: string;
+  date?: number;
   ogImage?: string;
 }) => (
   <div className="flex flex-col gap-1 items-center my-10 text-center">
@@ -38,7 +39,9 @@ export const BlogHeader = ({
       </Avatar>
       <div className="flex flex-col items-start gap-1">
         <div className="text-xl font-bold">{author}</div>
-        <div className="text-primary/60 text-xs">{date}</div>
+        <div className="text-primary/60 text-xs">
+          <DateFormatter dateString={date || new Date()} />
+        </div>
       </div>
     </div>
     {/* <Authors authors={authors} /> */}
