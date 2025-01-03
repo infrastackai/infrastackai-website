@@ -18,8 +18,11 @@ export default async function Page(props: {
 
   if (!params.slug) {
     const pages = source.getPages();
-    const heroPost = pages.shift();
-    if (!heroPost) notFound();
+    if (pages.length === 0) notFound();
+    let heroPost = pages.find((page) => page.data.isHero);
+    if (!heroPost) heroPost = pages[0];
+
+    pages.splice(pages.indexOf(heroPost), 1);
 
     return (
       <div className="mt-[144px] pl-24 pb-24 pr-24 w-full font-[family-name:var(--font-geist-sans)]">
