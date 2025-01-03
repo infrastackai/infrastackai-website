@@ -1,9 +1,5 @@
-import Link from "next/link";
 import DateFormatter from "./date-formatter";
-import { Avatar, AvatarFallback, AvatarImage } from "../ui/avatar";
-import CoverImage from "./cover-image";
 import IBlogPost from "@/interfaces/blog-post";
-import generateAvatarFallback from "@/utils/generate-avatar-fallback";
 import Image from "next/image";
 
 type Props = IBlogPost & {

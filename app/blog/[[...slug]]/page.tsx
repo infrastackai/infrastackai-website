@@ -22,7 +22,7 @@ export default async function Page(props: {
     if (!heroPost) notFound();
 
     return (
-      <div className="mt-[144px] pl-24 pr-24 w-full font-[family-name:var(--font-geist-sans)]">
+      <div className="mt-[144px] pl-24 pb-24 pr-24 w-full font-[family-name:var(--font-geist-sans)]">
         <h1 className="text-7xl font-bold font-semibold trackin text-5xl bg-gradient-to-b from-black via-black via-[29%] to-neutral-500 bg-clip-text text-transparent dark:from-white dark:via-white dark:to-neutral-500">
           Blog.
         </h1>
