@@ -21,7 +21,7 @@ const geistMono = localFont({
 export default function Layout({ children }: { children: ReactNode }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className="flex flex-col min-h-screen ${geistSans.variable} ${geistMono.variable} antialiased bg-zinc-50 dark:bg-black ">
+      <body className={`flex flex-col min-h-screen ${geistSans.variable} ${geistMono.variable} antialiased bg-zinc-50 dark:bg-black`}>
         <ThemeProvider
           attribute="class"
           defaultTheme="system"

@@ -39,7 +39,7 @@ export default function HeroBox() {
                 ))}
             </h1>
             <motion.p className="text-left text-xl font-semibold mb-8 leading-9  dark:bg-black dark:bg-opacity-50 bg-white bg-opacity-50 p-2 rounded-2xl" transition={transition} variants={variants}>
-            <span className="bg-gradient-to-r from-violet-500 to-violet-500  dark:bg-violet-500 border rounded-lg p-1 pl-2 pr-2 text-white">From chaos to calm</span> Harness the power of AI Agents to transform <span className="bg-violet-500 dark:bg-violet-500 border rounded-lg p-1 pl-2 pr-2 text-white ">Infra</span>, <span className="bg-violet-500 dark:bg-violet-500 border rounded-lg p-1 pl-2 pr-2 text-white ">SRE</span> & <span className="bg-violet-500 dark:bg-violet-500 border rounded-lg p-1 pl-2 pr-2 text-white">DevOps</span> into autonomous actions—automating Infrastructure tasks, triaging alerts & root-causes, detecting vulnerabilities, investigating user issues, and reducing MTTR.
+            <span className="bg-gradient-to-r from-violet-500 to-violet-500  dark:bg-violet-500 border rounded-lg p-1 pl-2 pr-2 text-white bg-opacity-80">From chaos to calm</span> Harness the power of AI Agents to transform <span className="bg-violet-500 dark:bg-violet-500 border rounded-lg p-1 pl-2 pr-2 text-white ">Infra</span>, <span className="bg-violet-500 dark:bg-violet-500 border rounded-lg p-1 pl-2 pr-2 text-white ">SRE</span> & <span className="bg-violet-500 dark:bg-violet-500 border rounded-lg p-1 pl-2 pr-2 text-white">DevOps</span> into autonomous actions—automating Infrastructure tasks, triaging alerts & root-causes, detecting vulnerabilities, investigating user issues, and reducing MTTR.
             </motion.p>
         </motion.div>
     )
