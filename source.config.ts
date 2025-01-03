@@ -1,7 +1,5 @@
 import { defineDocs, defineConfig, defineCollections, frontmatterSchema } from 'fumadocs-mdx/config';
 import { z } from 'zod';
-import { remarkMermaid } from '@theguild/remark-mermaid';
-
 
 
 export const { docs, meta } = defineDocs({
@@ -19,6 +17,6 @@ export const blog = defineCollections({
 
 export default defineConfig({
   mdxOptions: {
-    remarkPlugins: [remarkMermaid],
+    // remarkPlugins: [remarkMermaid],
   },
 });
