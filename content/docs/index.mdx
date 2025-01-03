@@ -1,13 +1,38 @@
 ---
-title: Hello World
-description: Your first document
+title: Getting Started
+description: Learn how to get started with InfraStack AI.
 ---
 
-Welcome to the docs! You can start writing documents in `/content/docs`.
+Welcome to InfraStack docs!
 
-## What is Next?
+## We're working on it! 🚧
 
-<Cards>
+```mermaid
+graph TB;
+subgraph AA [Integrations]
+A[AWS];
+B[Datadog];
+H[Prometheus];
+C[PagerDuty];
+end
+subgraph BB [Integrations]
+E[New Relic];
+F[Github];
+G[Sentry];
+D[...];
+end
+Z[InfraStack AI];
+A --> Z;
+B --> Z;
+C --> Z;
+E --> Z;
+G --> Z;
+F --> Z;
+D --> Z;
+H --> Z;
+```
+
+{/* <Cards>
   <Card title="Learn more about Next.js" href="https://nextjs.org/docs" />
   <Card title="Learn more about Fumadocs" href="https://fumadocs.vercel.app" />
-</Cards>
+</Cards> */}

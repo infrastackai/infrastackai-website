@@ -2,7 +2,7 @@
 
 import React from "react";
 import { motion } from "framer-motion";
-import { Button } from "../components/ui/button";
+import { Button } from "@/components/ui/button";
 
 const transition = { duration: 1, ease: [0.25, 0.1, 0.25, 1] };
 const variants = {
@@ -12,7 +12,7 @@ const variants = {
 
 const text = "Your AI-Ops Agents";
 
-export default function HeroBox() {
+export default function HeroContainer() {
   const words = text.split(" ");
 
   return (
