@@ -5,7 +5,6 @@ import {
   frontmatterSchema,
 } from "fumadocs-mdx/config";
 import { z } from "zod";
-import { remarkMermaid } from "@theguild/remark-mermaid";
 
 export const { docs, meta } = defineDocs({
   dir: "content/docs",
@@ -27,6 +26,6 @@ export const blog = defineCollections({
 export default defineConfig({
   lastModifiedTime: "git",
   mdxOptions: {
-    remarkPlugins: [remarkMermaid],
+    // remarkPlugins: [remarkMermaid],
   },
 });

@@ -1,0 +1,24 @@
+{
+    "name": "InfraStack AI",
+    "short_name": "InfraStack",
+    "start_url": ".",
+    "background_color": "#000",
+    "description": "Supercharge Infrastructure, SRE, and DevOps with AI Agents. Transform repetitive and time-consuming tasks into autonomous workflows. Save time, reduce errors, and improve productivity.",
+    "icons": [
+      {
+        "src": "/apple-touch-icon.png",
+        "sizes": "80x80",
+        "type": "image/png"
+      },
+      {
+        "src": "/favicon-16x16.png",
+        "sizes": "16x16",
+        "type": "image/png"
+      },
+      {
+        "src": "/preview.png",
+        "sizes": "800x800",
+        "type": "image/png"
+      }
+    ]
+  }
