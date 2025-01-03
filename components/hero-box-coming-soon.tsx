@@ -51,8 +51,21 @@ export default function HeroBox() {
                 ))}
             </h1>
             <motion.p className="text-center text-2xl font-semibold mb-8 leading-9  dark:bg-black dark:bg-opacity-50 bg-white bg-opacity-50 p-2 rounded-2xl" transition={transition} variants={variants}>
-            <span className="text-violet-500 font-bold">From chaos to calm:</span> unleash the power of AI Agents <br /> to transform <span className="text-violet-500 font-bold">Infra</span>, <span className="text-violet-500 font-bold">SRE</span> & <span className="text-violet-500 font-bold">DevOps</span> into autonomous actions
+            Supercharge your <span className="text-violet-500 font-bold">Infrastructure</span>, <span className="text-violet-500 font-bold">SRE</span>, and <span className="text-violet-500 font-bold">DevOps</span> with AI Agents<br />Transform repetitive and time-consuming tasks into AI-driven workflows
+            {/* <span className="font-bold text-violet-500">From <span className="text-violet-500">chaos</span> to calm:</span> unleash the power of AI Agents <br /> to transform <span className="text-violet-500 font-bold">Infrastructure</span>, <span className="text-violet-500 font-bold">SRE</span> & <span className="text-violet-500 font-bold">DevOps</span> tasks into autonomous actions */}
             </motion.p>
+            <div className="flex gap-4">
+                <motion.div transition={transition} variants={variants}>
+                    <Button variant="outline" size="lg" className="bg-violet-500 hover:bg-[#7D53DE] text-white h-12">
+                        Get Early Access
+                    </Button>
+                </motion.div>
+                {/* <motion.div transition={transition} variants={variants}>
+                    <Button variant="outline" size="lg" className="h-12" >
+                        Request a Demo
+                    </Button>
+                </motion.div> */}
+            </div>
         </motion.div>
     )
 }

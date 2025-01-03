@@ -21,9 +21,9 @@ export default function LearnMore() {
                 }} variant="default" size="lg" className="bg-violet-500 hover:bg-violet-500/90 text-white h-12">
                     <Headset /> Talk to our team
                 </Button>
-                {/* <Button variant="outline" size="lg" className="  h-12">
-            <Slack />Join our Slack
-          </Button> */}
+                <Button variant="outline" size="lg" disabled className="  h-12">
+                    <Slack />Join our Slack
+                </Button>
             </div>
         </div>
     )
