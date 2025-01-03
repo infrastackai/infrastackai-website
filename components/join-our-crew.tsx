@@ -69,7 +69,7 @@ export default function JoinOurCrew() {
                 Ankara, Türkiye
               </p> */}
             </div>
-            <Link href={`/docs`} className="text-violet-500 flex items-center justify-start text-lg font-[family-name:var(--font-geist-sans)] hover:underline">
+            <Link href={`https://infrastackai.notion.site/Careers-at-InfraStack-AI-2f07b3b32b0740c9b16aafa09d7bd864`} target='_blank' className="text-violet-500 flex items-center justify-start text-lg font-[family-name:var(--font-geist-sans)] hover:underline">
             Go to Careers  <ArrowUpRight className="h-6 w-6 inline" />
           </Link>
           </div>
