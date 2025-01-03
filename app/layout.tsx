@@ -3,7 +3,7 @@ import './global.css';
 import { RootProvider } from 'fumadocs-ui/provider';
 import type { ReactNode } from 'react';
 import localFont from "next/font/local";
-
+import { Analytics } from '@vercel/analytics/next';
 
 
 const geistSans = localFont({
@@ -30,6 +30,7 @@ export default function Layout({ children }: { children: ReactNode }) {
         >
           <RootProvider>{children}</RootProvider>
         </ThemeProvider>
+        <Analytics />
       </body>
     </html>
   );
