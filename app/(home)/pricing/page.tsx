@@ -21,7 +21,7 @@ export default function Pricing() {
         "Basic analytics",
         "Email support",
       ],
-      buttonLabel: "Contact Us",
+      buttonLabel: "Request Quota",
     },
     {
       title: "Enterprise",
