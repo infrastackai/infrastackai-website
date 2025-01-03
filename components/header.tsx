@@ -41,15 +41,15 @@ export default function Header() {
 
     return (
         <div className={cn(scrolled && currentTheme === 'dark' ? "border border-zinc-900 shadow-sm bg-background" : "border border-transparent", currentTheme === 'light' && !scrolled && "bg-zinc-50", currentTheme === 'light' && scrolled && "bg-background", "fixed flex right-8 h-16 p-2 pl-4 pr-4 left-8 top-6 items-center rounded-xl justify-between z-[50]", "transition-all duration-500 ease-in-out")}>
-            <div className="flex items-center">
+            <a href="/" className="flex items-center">
                 {currentTheme === 'light' && <Image src="/logo-violet.svg" alt="InfraStack Logo" width={40} height={40} className="h-10" />}
                 {currentTheme === 'dark' && <Image src="/logo-dark-theme.svg" alt="InfraStack Logo" width={40} height={40} className="h-10" />}
                 <p className="text-3xl font-bold ml-1 font-[family-name:var(--font-geist-sans)]">InfraStack</p>
-            </div>
+            </a>
             <div className="w-12"></div>
             <div className="flex-grow flex space-x-6 font-[family-name:var(--font-geist-mono)]">
                 {/* <p>FEATURES</p> */}
-                {/* <a href="http://localhost:3004/docs" target="_blank">DOCS</a> */}
+                <a href="/docs">DOCS</a>
                 <a href="/blog">BLOG</a>
                 <a href="https://infrastackai.notion.site/Careers-at-InfraStack-AI-2f07b3b32b0740c9b16aafa09d7bd864" target="_blank">CAREERS</a>
                 {/* <p>PRICING</p> */}
