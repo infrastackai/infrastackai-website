@@ -5,6 +5,7 @@ import { useEffect, useState } from "react";
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Header() {
     const { theme, systemTheme } = useTheme()
@@ -41,11 +42,11 @@ export default function Header() {
 
     return (
         <div className={cn(scrolled && currentTheme === 'dark' ? "border border-zinc-900 shadow-sm bg-background" : "border border-transparent", currentTheme === 'light' && !scrolled && "bg-zinc-50", currentTheme === 'light' && scrolled && "bg-background", "fixed flex right-8 h-16 p-2 pl-4 pr-4 left-8 top-6 items-center rounded-xl justify-between z-[50]", "transition-all duration-500 ease-in-out")}>
-            <a href="/" className="flex items-center">
+            <Link href="/" className="flex items-center">
                 {currentTheme === 'light' && <Image src="/logo-violet.svg" alt="InfraStack Logo" width={40} height={40} className="h-10" />}
                 {currentTheme === 'dark' && <Image src="/logo-dark-theme.svg" alt="InfraStack Logo" width={40} height={40} className="h-10" />}
                 <p className="text-3xl font-bold ml-1 font-[family-name:var(--font-geist-sans)]">InfraStack</p>
-            </a>
+            </Link>
             <div className="w-12"></div>
             <div className="flex-grow flex space-x-6 font-[family-name:var(--font-geist-mono)]">
                 {/* <p>FEATURES</p> */}
