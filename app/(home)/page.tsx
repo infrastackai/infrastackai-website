@@ -4,7 +4,6 @@ import HeroBox from "@/components/hero-box";
 import HeroBoxComingSoon from "@/components/hero-box-coming-soon";
 
 import { Button } from '@/components/ui/button';
-import { Headset, Slack } from "lucide-react";
 import LearnMore from '@/components/learn-more';
 
 export default function HomePage() {

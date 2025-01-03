@@ -1,9 +1,10 @@
 "use client";
 
-import React from "react";
+import React, { useEffect } from "react";
 import { motion } from "framer-motion";
 import { Button } from "./ui/button";
 import Image from "next/image";
+import { useTheme } from "next-themes";
 
 const transition = { duration: 1, ease: [.25, .1, .25, 1] };
 const variants = {
@@ -15,6 +16,16 @@ const text = "Your AI-0ps Agents—Arriving in Q1 2025";
 
 export default function HeroBox() {
     const words = text.split(" ");
+    const { theme, systemTheme } = useTheme()
+    const currentTheme = theme === "system" ? systemTheme : theme
+    const [mounted, setMounted] = React.useState(false)
+
+    useEffect(() => {
+        setMounted(true)
+    }, [])
+
+    if (!mounted) return null
+
 
     return (
         <motion.div
@@ -25,10 +36,11 @@ export default function HeroBox() {
             className="relative flex items-center flex-col space-y-4"
         >
             <div className="flex items-center">
-                <Image src="/logo-violet.svg" alt="InfraStack Logo" width={40} height={40} className="h-10" />
+                {currentTheme === "dark" && <Image src="/logo-violet-dark-eyes.svg" alt="InfraStack Logo" width={40} height={40} className="h-10" />}
+                {currentTheme === "light" && <Image src="/logo-violet.svg" alt="InfraStack Logo" width={40} height={40} className="h-10" />}
                 <p className="text-4xl font-bold ml-1 font-[family-name:var(--font-geist-sans)]">InfraStack</p>
             </div>
-            <h1 className="mb-6 text-5xl font-bold md:text-5xl font-[family-name:var(--font-geist-sans)]">
+            <h1 className="mb-6 text-5xl text-center font-bold md:text-5xl font-[family-name:var(--font-geist-sans)]">
                 {words.map((word, index) => (
                     <React.Fragment key={index}>
                         <motion.span className="inline-block" transition={transition} variants={variants}>
@@ -38,8 +50,8 @@ export default function HeroBox() {
                     </React.Fragment>
                 ))}
             </h1>
-            <motion.p className="text-center text-xl font-semibold mb-8 leading-9  dark:bg-black dark:bg-opacity-50 bg-white bg-opacity-50 p-2 rounded-2xl" transition={transition} variants={variants}>
-            <span className="text-violet-500 font-bold">From chaos to calm:</span> harness the power of AI Agents to transform <span className="text-violet-500 font-bold">Infra</span>, <span className="text-violet-500 font-bold">SRE</span> & <span className="text-violet-500 font-bold">DevOps</span> into autonomous actions
+            <motion.p className="text-center text-2xl font-semibold mb-8 leading-9  dark:bg-black dark:bg-opacity-50 bg-white bg-opacity-50 p-2 rounded-2xl" transition={transition} variants={variants}>
+            <span className="text-violet-500 font-bold">From chaos to calm:</span> unleash the power of AI Agents <br /> to transform <span className="text-violet-500 font-bold">Infra</span>, <span className="text-violet-500 font-bold">SRE</span> & <span className="text-violet-500 font-bold">DevOps</span> into autonomous actions
             </motion.p>
         </motion.div>
     )
