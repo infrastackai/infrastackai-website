@@ -1,7 +1,24 @@
-import { defineDocs, defineConfig } from 'fumadocs-mdx/config';
+import { defineDocs, defineConfig, defineCollections, frontmatterSchema } from 'fumadocs-mdx/config';
+import { z } from 'zod';
+import { remarkMermaid } from '@theguild/remark-mermaid';
+
+
 
 export const { docs, meta } = defineDocs({
   dir: 'content/docs',
 });
 
-export default defineConfig();
+export const blog = defineCollections({
+  type: 'doc',
+  dir: 'content/blog',
+  schema: frontmatterSchema.extend({
+    author: z.string(),
+    date: z.string().date().or(z.date()).optional(),
+  }),
+});
+
+export default defineConfig({
+  mdxOptions: {
+    remarkPlugins: [remarkMermaid],
+  },
+});
