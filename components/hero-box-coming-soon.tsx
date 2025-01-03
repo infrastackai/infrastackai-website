@@ -51,7 +51,7 @@ export default function HeroBox() {
                 ))}
             </h1>
             <motion.p className="text-center text-2xl font-semibold mb-8 leading-9  dark:bg-black dark:bg-opacity-50 bg-white bg-opacity-50 p-2 rounded-2xl" transition={transition} variants={variants}>
-            Supercharge your <span className="text-violet-500 font-bold">Infrastructure</span>, <span className="text-violet-500 font-bold">SRE</span>, and <span className="text-violet-500 font-bold">DevOps</span> with AI Agents<br />Transform repetitive and time-consuming tasks into AI-driven workflows
+            Supercharge your <span className="text-violet-500 font-bold">Infrastructure</span>, <span className="text-violet-500 font-bold">SRE</span>, and <span className="text-violet-500 font-bold">DevOps</span> with AI Agents<br />Transform repetitive and time-consuming tasks into autonomous workflows
             {/* <span className="font-bold text-violet-500">From <span className="text-violet-500">chaos</span> to calm:</span> unleash the power of AI Agents <br /> to transform <span className="text-violet-500 font-bold">Infrastructure</span>, <span className="text-violet-500 font-bold">SRE</span> & <span className="text-violet-500 font-bold">DevOps</span> tasks into autonomous actions */}
             </motion.p>
             <div className="flex gap-4">

@@ -5,6 +5,7 @@ import HeroBoxComingSoon from "@/components/hero-box-coming-soon";
 
 import { Button } from '@/components/ui/button';
 import LearnMore from '@/components/learn-more';
+import JoinOurCrew from '@/components/join-our-crew';
 
 export default function HomePage() {
   return (
@@ -25,6 +26,7 @@ export default function HomePage() {
           <HeroBoxComingSoon />
         </div>
       </div>
+      <JoinOurCrew />
       <LearnMore />
     </div>
   );
