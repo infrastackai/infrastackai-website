@@ -17,7 +17,7 @@ export function HeroPost({
   return (
     <a
       href={`/blog/${slug}`}
-      className="mt-8 relative justify-between border border-brand-borders dark:bg-medium-black rounded-2xl bg-brand-white p-3 -outline-offset-2 transition-all duration-300 md:p-4 grid grid-rows-[auto_auto] gap-4 lg:grid-cols-2 lg:grid-rows-1 lg:gap-8 md:rounded-3xl motion-reduce:transition-none mb-2 md:mb-4 hover:shadow-[0_0_10px_rgba(255,_255,_255,_0.6)] hover:border-opacity-80"
+      className="mt-8 relative justify-between border border-brand-borders dark:bg-medium-black rounded-2xl bg-brand-white p-3 -outline-offset-2 transition-all duration-300 md:p-4 grid grid-rows-[auto_auto] gap-4 lg:grid-cols-2 lg:grid-rows-1 lg:gap-8 md:rounded-3xl motion-reduce:transition-none mb-2 md:mb-4 border-zinc-300 hover:border-zinc-600 dark:border-zinc-600 dark:hover:border-zinc-300"
     >
       <div className="relative aspect-[620/405] h-full w-full overflow-hidden rounded-lg shadow-[0px_4px_10px_rgba(0,_0,_0,_0.25)]">
         <div className="absolute inset-0 rotate-180 bg-cover bg-center object-cover blur-sm [transform-origin:41%_60%] [object-fit:fill] [transform:scaleX(1.5)_scale(1.5)_rotate(180deg)]"></div>
@@ -62,7 +62,7 @@ export function HeroPost({
             alt={author?.name || "Author"}
           />
           <div className="flex flex-col gap-1">
-            <p className="[&_b]:md:font-semibold [&_strong]:md:font-semibold font-mono text-base/[1.125rem] md:text-lg/[1.5rem] text-gray-300">
+            <p className="[&_b]:md:font-semibold [&_strong]:md:font-semibold font-mono text-base/[1.125rem] md:text-lg/[1.5rem] text-zinc-600 dark:text-zinc-300">
               {author?.name}
             </p>
             <p className="[&_b]:md:font-semibold [&_strong]:md:font-semibold font-mono text-sm/[1.125rem] md:text-base/[1.375rem] text-neutral-600 dark:text-neutral-400">
