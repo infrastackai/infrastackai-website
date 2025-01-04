@@ -10,7 +10,7 @@ export function PostPreview({ title, date, excerpt, author, slug }: Props) {
   return (
     <a
       href={`/blog/${slug}`}
-      className="relative justify-between border dark:bg-medium-black -outline-offset-2 flex flex-col gap-4 md:gap-2 px-6 py-6 md:py-6.5 rounded-2xl md:rounded-2.5xl border-0.75 transition-colors duration-300 motion-reduce:transition-none hover:shadow-[0_0_10px_rgba(255,_255,_255,_0.6)] hover:border-opacity-80"
+      className="relative justify-between border dark:bg-medium-black -outline-offset-2 flex flex-col gap-4 md:gap-2 px-6 py-6 md:py-6.5 rounded-2xl md:rounded-2.5xl border-0.75 transition-colors duration-300 motion-reduce:transition-none border-zinc-300 hover:border-zinc-600 dark:border-zinc-600 dark:hover:border-zinc-300"
     >
       <div className="[&_b]:md:font-semibold [&_strong]:md:font-semibold font-mono text-sm/[0.875rem] tracking-4 md:text-sm/[1.25rem] uppercase text-neutral-400">
         <DateFormatter dateString={date || new Date()} />
