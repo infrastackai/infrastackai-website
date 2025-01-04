@@ -10,11 +10,11 @@ type Props = {
 
 export default function MorePosts({ posts }: Props) {
   return (
-    <section>
-      <h2 className="mb-8 text-5xl md:text-7xl font-bold tracking-tighter leading-tight">
-        More Posts
+    <div className="optimized-render-block flex flex-col gap-6">
+      <h2 className="text-xl/[1.375rem] font-semibold -tracking-4 md:text-4xl/[2.625rem]">
+        All Posts
       </h2>
-      <div className="grid grid-cols-1 md:grid-cols-2 md:gap-x-16 lg:gap-x-32 gap-y-20 md:gap-y-32 mb-32">
+      <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3 lg:gap-x-4.5 lg:gap-y-6">
         {posts.map((post) => (
           <PostPreview
             key={post.slug}
@@ -27,6 +27,6 @@ export default function MorePosts({ posts }: Props) {
           />
         ))}
       </div>
-    </section>
+    </div>
   );
 }

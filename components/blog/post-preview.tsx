@@ -1,43 +1,47 @@
-import Link from "next/link";
-import CoverImage from "./cover-image";
 import DateFormatter from "./date-formatter";
 import IBlogPost from "@/interfaces/blog-post";
-import { Avatar, AvatarFallback, AvatarImage } from "../ui/avatar";
-import generateAvatarFallback from "@/utils/generate-avatar-fallback";
+import Image from "next/image";
 
 type Props = IBlogPost & {
   slug: string;
-}
+};
 
-export function PostPreview({
-  title,
-  coverImage,
-  date,
-  excerpt,
-  author,
-  slug,
-}: Props) {
+export function PostPreview({ title, date, excerpt, author, slug }: Props) {
   return (
-    <div>
-      <div className="mb-5">
-        <CoverImage slug={slug} title={title} src={coverImage} />
-      </div>
-      <h3 className="text-3xl mb-3 leading-snug">
-        <Link href={`/blog/${slug}`} className="hover:underline">
-          {title}
-        </Link>
-      </h3>
-      <div className="text-lg mb-4">
+    <a
+      href={`/blog/${slug}`}
+      className="relative justify-between border-brand-borders dark:bg-brand-medium-black -outline-offset-2 flex flex-col gap-4 md:gap-2 px-6 py-6 md:py-6.5 rounded-2xl md:rounded-2.5xl border-0.75 bg-brand-background transition-colors duration-300 motion-reduce:transition-none hover:shadow-[0_0_10px_rgba(255,_255,_255,_0.6)] hover:border-opacity-80"
+    >
+      <div className="[&_b]:md:font-semibold [&_strong]:md:font-semibold font-mono text-sm/[0.875rem] tracking-4 md:text-sm/[1.25rem] uppercase text-neutral-400">
         <DateFormatter dateString={date || new Date()} />
       </div>
-      <p className="text-lg leading-relaxed mb-4">{excerpt}</p>
-      <div className="flex items-center gap-4">
-        <Avatar className="w-12 h-12">
-          <AvatarImage src={author?.picture} />
-          <AvatarFallback>{generateAvatarFallback(author?.name || "")}</AvatarFallback>
-        </Avatar>
-        <div className="text-xl font-bold">{author?.name}</div>
+      <div className="flex flex-1 flex-col justify-between gap-4 md:gap-8">
+        <div className="flex flex-col gap-2">
+          <h2 className="pt-0.5 text-xl/[1.375rem] font-semibold -tracking-4 md:text-2xl/[1.875rem] text-balance">
+            {title}
+          </h2>
+          <p className="[&_b]:md:font-semibold [&_strong]:md:font-semibold font-mono text-sm/[1.125rem] md:text-base/[1.375rem] hidden text-neutral-600 dark:text-neutral-400 md:block">
+            {excerpt}
+          </p>
+        </div>
+        <div className="flex items-center gap-4">
+          <Image
+            src={author?.picture || ""}
+            className="size-9 rounded-lg md:size-12"
+            width={144}
+            height={144}
+            alt={author?.name || "Author"}
+          />
+          <div className="flex flex-col gap-1">
+            <p className="[&_b]:md:font-semibold [&_strong]:md:font-semibold font-mono text-base/[1.125rem] md:text-lg/[1.5rem] text-gray-300">
+              {author?.name}
+            </p>
+            <p className="[&_b]:md:font-semibold [&_strong]:md:font-semibold font-mono text-sm/[1.125rem] md:text-base/[1.375rem] text-neutral-600 dark:text-neutral-400">
+              {author?.title}
+            </p>
+          </div>
+        </div>
       </div>
-    </div>
+    </a>
   );
 }
