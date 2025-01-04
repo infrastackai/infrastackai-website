@@ -5,7 +5,7 @@ import Image from "next/image";
 const people = [
   {
     name: "Aykut Gedik",
-    role: "CEO",
+    role: "Founder & CEO",
     image: "https://avatars.githubusercontent.com/aykutgk",
     description:
       "Jane brings over 10 years of experience in leading innovative teams to success.",
