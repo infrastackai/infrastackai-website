@@ -83,7 +83,7 @@ export default function AboutUs() {
           <h2 className="text-2xl font-bold text-center mb-4">Meet Our Team</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {people.map((person) => (
-              <Card className="glow-hover" key={person.name}>
+              <Card key={person.name}>
                 <CardHeader>
                   <div className="flex items-start gap-4">
                     <Image
