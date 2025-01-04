@@ -62,7 +62,7 @@ export function HeroPost({
             alt={author?.name || "Author"}
           />
           <div className="flex flex-col gap-1">
-            <p className="[&_b]:md:font-semibold [&_strong]:md:font-semibold font-mono text-base/[1.125rem] md:text-lg/[1.5rem] text-gray-300">
+            <p className="[&_b]:md:font-semibold [&_strong]:md:font-semibold font-mono text-base/[1.125rem] md:text-lg/[1.5rem] text-zinc-600 dark:text-zinc-300">
               {author?.name}
             </p>
             <p className="[&_b]:md:font-semibold [&_strong]:md:font-semibold font-mono text-sm/[1.125rem] md:text-base/[1.375rem] text-neutral-600 dark:text-neutral-400">

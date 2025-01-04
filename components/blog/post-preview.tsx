@@ -10,7 +10,7 @@ export function PostPreview({ title, date, excerpt, author, slug }: Props) {
   return (
     <a
       href={`/blog/${slug}`}
-      className="relative justify-between border-brand-borders dark:bg-brand-medium-black -outline-offset-2 flex flex-col gap-4 md:gap-2 px-6 py-6 md:py-6.5 rounded-2xl md:rounded-2.5xl border-0.75 bg-brand-background transition-colors duration-300 motion-reduce:transition-none hover:shadow-[0_0_10px_rgba(255,_255,_255,_0.6)] hover:border-opacity-80"
+      className="relative justify-between border dark:bg-medium-black -outline-offset-2 flex flex-col gap-4 md:gap-2 px-6 py-6 md:py-6.5 rounded-2xl md:rounded-2.5xl border-0.75 transition-colors duration-300 motion-reduce:transition-none hover:shadow-[0_0_10px_rgba(255,_255,_255,_0.6)] hover:border-opacity-80"
     >
       <div className="[&_b]:md:font-semibold [&_strong]:md:font-semibold font-mono text-sm/[0.875rem] tracking-4 md:text-sm/[1.25rem] uppercase text-neutral-400">
         <DateFormatter dateString={date || new Date()} />
@@ -33,7 +33,7 @@ export function PostPreview({ title, date, excerpt, author, slug }: Props) {
             alt={author?.name || "Author"}
           />
           <div className="flex flex-col gap-1">
-            <p className="[&_b]:md:font-semibold [&_strong]:md:font-semibold font-mono text-base/[1.125rem] md:text-lg/[1.5rem] text-gray-300">
+            <p className="[&_b]:md:font-semibold [&_strong]:md:font-semibold font-mono text-base/[1.125rem] md:text-lg/[1.5rem] text-zinc-600 dark:text-zinc-300 ">
               {author?.name}
             </p>
             <p className="[&_b]:md:font-semibold [&_strong]:md:font-semibold font-mono text-sm/[1.125rem] md:text-base/[1.375rem] text-neutral-600 dark:text-neutral-400">

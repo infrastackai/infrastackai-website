@@ -29,6 +29,7 @@
     --chart-5: 27 87% 67%;
     --radius: 0.5rem;
     --fd-banner-height: 90px;
+    --borders: #ccc;
   }
   .dark {
     --background: 240 10% 3.9%;
