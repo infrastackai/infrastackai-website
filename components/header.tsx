@@ -50,8 +50,8 @@ export default function Header() {
             <div className="w-12"></div>
             <div className="flex-grow flex space-x-6 font-[family-name:var(--font-geist-mono)]">
                 {/* <p>FEATURES</p> */}
-                <Link href="/docs">DOCS</Link>
-                <Link href="/blog">BLOG</Link>
+                {/* <Link href="/docs">DOCS</Link>
+                <Link href="/blog">BLOG</Link> */}
                 <Link href="https://infrastackai.notion.site/Careers-at-InfraStack-AI-2f07b3b32b0740c9b16aafa09d7bd864" target="_blank">CAREERS</Link>
                 {/* <p>PRICING</p> */}
                 {/* <p>CAREERS</p> */}
