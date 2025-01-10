@@ -33,7 +33,7 @@ export default function AboutUs() {
         <h1 className="text-4xl font-bold text-center mb-4">About Us</h1>
 
         <div className="grid grid-cols-1 gap-6">
-          <Card className="glow-hover">
+          <Card className="glow-hover mb-2 md:mb-4">
             <CardHeader>
               <h2 className="pointer-events-none text-xl font-semibold">
                 Our Mission
@@ -55,7 +55,7 @@ export default function AboutUs() {
             </CardContent>
           </Card>
 
-          <Card className="glow-hover">
+          <Card className="glow-hover mb-2 md:mb-4">
             <CardHeader>
               <h2 className="text-xl font-semibold pointer-events-none">
                 Our Vision
