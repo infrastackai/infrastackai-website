@@ -40,7 +40,7 @@ export default function HeroBox() {
                 {currentTheme === "light" && <Image src="/logo-violet.svg" alt="InfraStack Logo" width={40} height={40} className="h-10" />}
                 <p className="text-4xl font-bold ml-1 font-[family-name:var(--font-geist-sans)]">InfraStack</p>
             </div>
-            <h1 className="mb-6 text-5xl text-center font-bold md:text-5xl font-[family-name:var(--font-geist-sans)]">
+            {true && <h1 className="mb-6 text-5xl text-center font-bold md:text-5xl font-[family-name:var(--font-geist-sans)]">
                 {words.map((word, index) => (
                     <React.Fragment key={index}>
                         <motion.span className="inline-block" transition={transition} variants={variants}>
@@ -49,16 +49,21 @@ export default function HeroBox() {
                         {index < words.length - 1 && ' '}
                     </React.Fragment>
                 ))}
-            </h1>
-            <motion.p className="text-center text-2xl font-semibold mb-8 leading-9  dark:bg-black dark:bg-opacity-50 bg-white bg-opacity-50 p-2 rounded-2xl" transition={transition} variants={variants}>
-            Supercharge <span className="text-violet-500 font-bold">Infrastructure</span>, <span className="text-violet-500 font-bold">SRE</span>, and <span className="text-violet-500 font-bold">DevOps</span> with AI Agents
-            <br />Transform repetitive and time-consuming tasks into autonomous workflows
-            <br />Save time, reduce errors, and improve productivity
-            {/* <span className="font-bold text-violet-500">From <span className="text-violet-500">chaos</span> to calm:</span> unleash the power of AI Agents <br /> to transform <span className="text-violet-500 font-bold">Infrastructure</span>, <span className="text-violet-500 font-bold">SRE</span> & <span className="text-violet-500 font-bold">DevOps</span> tasks into autonomous actions */}
-            </motion.p>
+            </h1>}
+            {true && <motion.p className="text-center text-2xl font-semibold mb-8 leading-9  dark:bg-black dark:bg-opacity-50 bg-white bg-opacity-50 p-2 rounded-2xl" transition={transition} variants={variants}>
+                Supercharge <span className="text-violet-500 font-bold">Infrastructure</span>, <span className="text-violet-500 font-bold">SRE</span>, and <span className="text-violet-500 font-bold">DevOps</span> with AI Agents
+                <br />Transform repetitive and time-consuming tasks into autonomous workflows
+                <br />Save time, reduce errors, and improve productivity
+                {/* <span className="font-bold text-violet-500">From <span className="text-violet-500">chaos</span> to calm:</span> unleash the power of AI Agents <br /> to transform <span className="text-violet-500 font-bold">Infrastructure</span>, <span className="text-violet-500 font-bold">SRE</span> & <span className="text-violet-500 font-bold">DevOps</span> tasks into autonomous actions */}
+            </motion.p>}
             <div className="flex gap-4">
                 <motion.div transition={transition} variants={variants}>
-                    <Button variant="outline" size="lg" className="bg-violet-500 hover:bg-[#7D53DE] text-white h-12">
+                    <Button onClick={() => {
+                        window.open(
+                            "https://cal.com/aykut-gedik-infrastack-ai/talk-to-our-team",
+                            "_blank"
+                        );
+                    }} variant="outline" size="lg" className="bg-violet-500 hover:bg-[#7D53DE] text-white h-12">
                         Get Early Access
                     </Button>
                 </motion.div>
