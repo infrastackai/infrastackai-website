@@ -72,5 +72,5 @@
 }
 
 .glow-hover {
-  @apply transition-all duration-300 motion-reduce:transition-none border-zinc-300 hover:border-zinc-600 dark:border-zinc-600 dark:hover:border-zinc-300;
+  @apply transition-all duration-300 motion-reduce:transition-none border border-zinc-300 hover:border-zinc-600 dark:border-zinc-600 dark:hover:border-zinc-300;
 }

@@ -35,7 +35,7 @@ export default function JoinOurCrew() {
       </div>
       <div></div>
       <div></div>
-      <div className="flex-1 bg-background min-w-[400px]  border p-6 hover:border-primary rounded-xl items-center flex flex-row space-x-4">
+      <div className="flex-1 bg-background min-w-[400px] glow-hover p-6 rounded-xl items-center flex flex-row space-x-4">
         <div className="p-2 bg-violet-500 rounded-xl w-fit">
           <Briefcase className="h-6 w-6 text-white" />
         </div>
@@ -51,7 +51,7 @@ export default function JoinOurCrew() {
                 Global
               </p> */}
       </div>
-      <div className="flex-1 bg-background min-w-[400px]  border p-6 hover:border-primary rounded-xl items-center flex flex-row space-x-4">
+      <div className="flex-1 bg-background min-w-[400px] glow-hover p-6 rounded-xl items-center flex flex-row space-x-4">
         <div className="p-2 bg-violet-500 rounded-xl w-fit">
           <Briefcase className="h-6 w-6 text-white" />
         </div>
@@ -64,7 +64,7 @@ export default function JoinOurCrew() {
           </p>
         </div>
       </div>
-      <div className="flex-1 bg-background min-w-[400px]  border p-6 hover:border-primary rounded-xl items-center flex flex-row space-x-4">
+      <div className="flex-1 bg-background min-w-[400px] glow-hover p-6 rounded-xl items-center flex flex-row space-x-4">
         <div className="p-2 bg-violet-500 rounded-xl w-fit">
           <Briefcase className="h-6 w-6 text-white" />
         </div>
@@ -81,7 +81,7 @@ export default function JoinOurCrew() {
                 Ankara, Türkiye
               </p> */}
       </div>
-      <div className="flex-1 bg-background min-w-[400px]  border p-6 hover:border-primary rounded-xl items-center flex flex-row space-x-4">
+      <div className="flex-1 bg-background min-w-[400px] glow-hover p-6 rounded-xl items-center flex flex-row space-x-4">
         <div className="p-2 bg-violet-500 rounded-xl w-fit">
           <Briefcase className="h-6 w-6 text-white" />
         </div>
