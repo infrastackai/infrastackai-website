@@ -8,9 +8,10 @@ import Footer from "@/components/footer";
 export default function Layout({ children }: { children: ReactNode }) {
   return (
     <>
-      <Header />
       <div className="mt-24">
-        <DocsLayout tree={source.pageTree} sidebar={{ enabled: false }}>
+        <DocsLayout
+          nav={{ component: <Header /> }}
+          tree={source.pageTree} sidebar={{ enabled: false }}>
           {children}
         </DocsLayout>
       </div>
