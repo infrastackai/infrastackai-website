@@ -35,68 +35,57 @@ export default function JoinOurCrew() {
       </div>
       <div></div>
       <div></div>
-      <div className="flex-1 bg-background min-w-[400px]  border p-6 hover:border-primary rounded-xl items-center flex flex-row space-x-4">
+      <div className="flex-1 bg-background min-w-[280px] md:min-w-[400px] border p-4 md:p-6 hover:border-primary rounded-xl items-center flex flex-row space-x-4">
         <div className="p-2 bg-violet-500 rounded-xl w-fit">
-          <Briefcase className="h-6 w-6 text-white" />
+          <Briefcase className="h-5 w-5 md:h-6 md:w-6 text-white" />
         </div>
         <div className="flex flex-col">
-          <p className="font-semibold trackin text-2xl bg-gradient-to-b from-black via-black via-[29%] to-neutral-500 bg-clip-text text-transparent dark:from-white dark:via-white dark:to-neutral-500">
+          <p className="font-semibold text-xl md:text-2xl bg-gradient-to-b from-black via-black via-[29%] to-neutral-500 bg-clip-text text-transparent dark:from-white dark:via-white dark:to-neutral-500">
             AI Engineer
           </p>
-          <p className="text-muted-foreground text-lg font-[family-name:var(--font-geist-mono)]">
+          <p className="text-muted-foreground text-base md:text-lg font-[family-name:var(--font-geist-mono)]">
             Global
           </p>
-        </div>{" "}
-        {/* <p className="text-muted-foreground text-lg font-[family-name:var(--font-geist-mono)]">
-                Global
-              </p> */}
+        </div>
       </div>
-      <div className="flex-1 bg-background min-w-[400px]  border p-6 hover:border-primary rounded-xl items-center flex flex-row space-x-4">
+      <div className="flex-1 bg-background min-w-[280px] md:min-w-[400px] border p-4 md:p-6 hover:border-primary rounded-xl items-center flex flex-row space-x-4">
         <div className="p-2 bg-violet-500 rounded-xl w-fit">
-          <Briefcase className="h-6 w-6 text-white" />
+          <Briefcase className="h-5 w-5 md:h-6 md:w-6 text-white" />
         </div>
         <div className="flex flex-col">
-          <p className="font-semibold trackin text-2xl bg-gradient-to-b from-black via-black via-[29%] to-neutral-500 bg-clip-text text-transparent dark:from-white dark:via-white dark:to-neutral-500">
+          <p className="font-semibold text-xl md:text-2xl bg-gradient-to-b from-black via-black via-[29%] to-neutral-500 bg-clip-text text-transparent dark:from-white dark:via-white dark:to-neutral-500">
             AI Engineering Intern
           </p>
-          <p className="text-muted-foreground text-lg font-[family-name:var(--font-geist-mono)]">
+          <p className="text-muted-foreground text-base md:text-lg font-[family-name:var(--font-geist-mono)]">
             San Francisco, CA
           </p>
         </div>
       </div>
-      <div className="flex-1 bg-background min-w-[400px]  border p-6 hover:border-primary rounded-xl items-center flex flex-row space-x-4">
+      <div className="flex-1 bg-background min-w-[280px] md:min-w-[400px] border p-4 md:p-6 hover:border-primary rounded-xl items-center flex flex-row space-x-4">
         <div className="p-2 bg-violet-500 rounded-xl w-fit">
-          <Briefcase className="h-6 w-6 text-white" />
+          <Briefcase className="h-5 w-5 md:h-6 md:w-6 text-white" />
         </div>
         <div className="flex flex-col">
-          <p className="font-semibold trackin text-2xl bg-gradient-to-b from-black via-black via-[29%] to-neutral-500 bg-clip-text text-transparent dark:from-white dark:via-white dark:to-neutral-500">
+          <p className="font-semibold text-xl md:text-2xl bg-gradient-to-b from-black via-black via-[29%] to-neutral-500 bg-clip-text text-transparent dark:from-white dark:via-white dark:to-neutral-500">
             Full-Stack Engineer
           </p>
-          <p className="text-muted-foreground text-lg font-[family-name:var(--font-geist-mono)]">
+          <p className="text-muted-foreground text-base md:text-lg font-[family-name:var(--font-geist-mono)]">
             Global
           </p>
         </div>
-        {/* <p className="text-muted-foreground text-lg font-[family-name:var(--font-geist-mono)]">
-                San Francisco, CA <br />
-                Ankara, Türkiye
-              </p> */}
       </div>
-      <div className="flex-1 bg-background min-w-[400px]  border p-6 hover:border-primary rounded-xl items-center flex flex-row space-x-4">
+      <div className="flex-1 bg-background min-w-[280px] md:min-w-[400px] border p-4 md:p-6 hover:border-primary rounded-xl items-center flex flex-row space-x-4">
         <div className="p-2 bg-violet-500 rounded-xl w-fit">
-          <Briefcase className="h-6 w-6 text-white" />
+          <Briefcase className="h-5 w-5 md:h-6 md:w-6 text-white" />
         </div>
         <div className="flex flex-col">
-          <p className="font-semibold trackin text-2xl bg-gradient-to-b from-black via-black via-[29%] to-neutral-500 bg-clip-text text-transparent dark:from-white dark:via-white dark:to-neutral-500">
+          <p className="font-semibold text-xl md:text-2xl bg-gradient-to-b from-black via-black via-[29%] to-neutral-500 bg-clip-text text-transparent dark:from-white dark:via-white dark:to-neutral-500">
             Head of Growth
           </p>
-          <p className="text-muted-foreground text-lg font-[family-name:var(--font-geist-mono)]">
+          <p className="text-muted-foreground text-base md:text-lg font-[family-name:var(--font-geist-mono)]">
             Global
           </p>
         </div>
-        {/* <p className="text-muted-foreground text-lg font-[family-name:var(--font-geist-mono)]">
-                San Francisco, CA <br />
-                Ankara, Türkiye
-              </p> */}
       </div>
       <Link
         href={`https://infrastackai.notion.site/Careers-at-InfraStack-AI-2f07b3b32b0740c9b16aafa09d7bd864`}

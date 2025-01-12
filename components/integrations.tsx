@@ -22,7 +22,7 @@ export default function Integrations() {
       }}
       variants={variants}
       viewport={{ once: true }}
-      className="p-16 flex flex-col space-y-4 items-center"
+      className="px-4 md:px-16 flex flex-col space-y-4 items-center w-full max-w-full overflow-hidden"
     >
       {/* <BentoDemo /> */}
       <div className="flex flex-col space-y-4 items-center">
@@ -39,43 +39,52 @@ export default function Integrations() {
         </div>
       </div>
       <div className="flex items-center flex-col">
-        <div className="flex flex-row space-x-8 items-center">
-          <div className="pl-4 pr-4 flex items-center">
+        <div className="flex flex-wrap justify-center gap-8 px-4">
+          <div className="w-24 md:w-32 flex items-center">
             <Image
               src="/integrations/aws.svg"
               alt="AWS Logo"
               width={80}
               height={50}
+              className="w-full h-auto max-w-[80px]"
             />
           </div>
-          <div className="pl-4 pr-4 flex items-center">
+          <div className="w-24 md:w-32 flex items-center">
             <Image
               src="/integrations/datadog.svg"
               alt="Datadog Logo"
               width={160}
               height={50}
+              className="w-full h-auto max-w-[120px]"
             />
           </div>
-          <Image
-            src="/integrations/github.svg"
-            alt="Github Logo"
-            width={140}
-            height={50}
-          />
-          <div className="pl-2 pr-2 flex items-center">
+          <div className="w-24 md:w-32 flex items-center">
+            <Image
+              src="/integrations/github.svg"
+              alt="Github Logo"
+              width={140}
+              height={50}
+              className="w-full h-auto max-w-[100px]"
+            />
+          </div>
+          <div className="w-24 md:w-32 flex items-center">
             <Image
               src="/integrations/pagerduty.svg"
               alt="PagerDuty Logo"
               width={150}
               height={50}
+              className="w-full h-auto max-w-[110px]"
             />
           </div>
-          <Image
-            src="/integrations/slack.svg"
-            alt="Slack Logo"
-            width={150}
-            height={50}
-          />
+          <div className="w-24 md:w-32 flex items-center">
+            <Image
+              src="/integrations/slack.svg"
+              alt="Slack Logo"
+              width={150}
+              height={50}
+              className="w-full h-auto max-w-[100px]"
+            />
+          </div>
         </div>
         <Link
           href={`/docs`}

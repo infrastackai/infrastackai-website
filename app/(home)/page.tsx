@@ -8,7 +8,7 @@ import Integrations from "@/components/integrations";
 export default function HomePage() {
   return (
     <div className="flex-grow flex flex-col font-[family-name:var(--font-geist-sans)]">
-      <div className="relative w-full h-[400px] mt-[104px] overflow-hidden flex items-center justify-center flex-col space-y-4">
+      <div className="relative w-full h-[500px] md:h-[600px] mt-[104px] overflow-hidden flex items-center justify-center flex-col space-y-4">
         <div className="absolute inset-0">
           <FlickeringGrid
             className="z-0 size-full"
@@ -19,14 +19,15 @@ export default function HomePage() {
             flickerChance={0.1}
           />
         </div>
-        <div className="pl-12 pr-12">
-          {/* <HeroBox /> */}
+        <div className="px-4 md:px-12 w-full max-w-full">
           <HeroBoxComingSoon />
         </div>
       </div>
-      <Integrations />
-      <JoinOurCrew />
-      <LearnMore />
+      <div className="px-4 md:px-0">
+        <Integrations />
+        <JoinOurCrew />
+        <LearnMore />
+      </div>
     </div>
   );
 }
