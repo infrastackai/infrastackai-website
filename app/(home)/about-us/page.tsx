@@ -29,7 +29,7 @@ const people = [
 export default function AboutUs() {
   return (
     <div className="w-full flex flex-col items-center justify-center my-4">
-      <div className="flex flex-col gap-2 items-stretch max-w-6xl justify-center min-h-screen relative w-full mt-[104px] overflow-hidden space-y-4">
+      <div className="flex flex-col gap-2 items-stretch w-3/4 justify-center min-h-screen relative w-full mt-[104px] overflow-hidden space-y-4">
         <div className="flex-col items-start justify-start">
           <h1 className="text-7xl font-bold font-semibold trackin text-5xl bg-gradient-to-b from-black via-black via-[29%] to-neutral-500 bg-clip-text text-transparent dark:from-white dark:via-white dark:to-neutral-500">
             About Us.
