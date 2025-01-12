@@ -28,19 +28,25 @@ const people = [
 
 export default function AboutUs() {
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen relative w-full mt-[104px] overflow-hidden space-y-4">
-      <div className="max-w-4xl mx-auto p-6">
-        <h1 className="text-4xl font-bold text-center mb-4">About Us</h1>
-
+    <div className="w-full flex flex-col items-center justify-center my-4">
+      <div className="flex flex-col gap-2 items-stretch max-w-6xl justify-center min-h-screen relative w-full mt-[104px] overflow-hidden space-y-4">
+        <div className="flex-col items-start justify-start">
+          <h1 className="text-7xl font-bold font-semibold trackin text-5xl bg-gradient-to-b from-black via-black via-[29%] to-neutral-500 bg-clip-text text-transparent dark:from-white dark:via-white dark:to-neutral-500">
+            About Us.
+          </h1>
+          <p className="text-muted-foreground mt-2 text-lg font-[family-name:var(--font-geist-mono)]">
+            Learn more about us.
+          </p>
+        </div>
         <div className="grid grid-cols-1 gap-6">
           <Card className="glow-hover mb-2 md:mb-4">
             <CardHeader>
-              <h2 className="pointer-events-none text-xl font-semibold">
+              <h2 className="text-3xl font-bold font-semibold trackin text-xl bg-gradient-to-b from-black via-black via-[29%] to-neutral-500 bg-clip-text text-transparent dark:from-white dark:via-white dark:to-neutral-500">
                 Our Mission
               </h2>
             </CardHeader>
             <CardContent>
-              <p className="pointer-events-none">
+              <p className="text-muted-foreground mt-2 text-lg font-[family-name:var(--font-geist-mono)]">
                 To empower businesses by delivering innovative technology
                 solutions that drive growth, efficiency, and success. At the
                 heart of our mission lies a commitment to helping organizations
@@ -57,12 +63,12 @@ export default function AboutUs() {
 
           <Card className="glow-hover mb-2 md:mb-4">
             <CardHeader>
-              <h2 className="text-xl font-semibold pointer-events-none">
+              <h2 className="text-3xl font-bold font-semibold trackin text-xl bg-gradient-to-b from-black via-black via-[29%] to-neutral-500 bg-clip-text text-transparent dark:from-white dark:via-white dark:to-neutral-500">
                 Our Vision
               </h2>
             </CardHeader>
             <CardContent>
-              <p className="pointer-events-none">
+              <p className="text-muted-foreground mt-2 text-lg font-[family-name:var(--font-geist-mono)]">
                 To become a global leader in delivering cutting-edge services
                 that redefine industry standards while fostering long-lasting
                 client relationships built on trust, transparency, and mutual
@@ -80,7 +86,7 @@ export default function AboutUs() {
         </div>
 
         <div className="mt-8">
-          <h2 className="text-2xl font-bold text-center mb-4">Meet Our Team</h2>
+          <h2 className="text-5xl font-bold font-semibold trackin text-3xl bg-gradient-to-b from-black via-black via-[29%] to-neutral-500 bg-clip-text text-transparent dark:from-white dark:via-white dark:to-neutral-500 my-4">Meet Our Team</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {people.map((person) => (
               <Card key={person.name}>
@@ -104,15 +110,15 @@ export default function AboutUs() {
                   </div>
                 </CardHeader>
                 <CardContent>
-                  <p className="pointer-events-none">{person.description}</p>
+                  <p className="text-muted-foreground mt-2 text-lg font-[family-name:var(--font-geist-mono)]">{person.description}</p>
                 </CardContent>
               </Card>
             ))}
           </div>
         </div>
 
-        <div className="text-center mt-8">
-          <Button>Contact Us</Button>
+        <div className="text-center mt-8 text-muted-foreground mt-2 text-lg font-[family-name:var(--font-geist-mono)]">
+          <Button>CONTACT US</Button>
         </div>
       </div>
     </div>
