@@ -20,7 +20,7 @@ export default function JoinOurCrew() {
       }}
       variants={variants}
       viewport={{ once: true }}
-      className="flex flex-col space-y-4 mb-24 mt-24 items-center"
+      className="flex flex-col space-y-4 my-24 items-center"
     >
       <div className="">
         {/* Integrates with the tools you already use */}
