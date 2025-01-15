@@ -102,15 +102,15 @@ export default function AboutUs() {
             {people.map((person) => (
               <Card key={person.name}>
                 <CardHeader>
-                  <div className="flex items-start gap-4">
+                  <div className="flex flex-col items-center gap-4">
                     <Image
                       src={person.image}
-                      className="size-9 rounded-lg md:size-12"
-                      width={144}
-                      height={144}
+                      className="size-16 rounded-full"
+                      width={192}
+                      height={192}
                       alt={person.name}
                     />
-                    <div className="pointer-events-none flex flex-col gap-1">
+                    <div className="pointer-events-none flex flex-col items-center gap-1">
                       <p className="font-mono text-sm md:text-base text-gray-300">
                         {person.name}
                       </p>
