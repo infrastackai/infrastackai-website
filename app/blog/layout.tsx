@@ -9,8 +9,12 @@ export default function Layout({ children }: { children: ReactNode }) {
   return (
     <>
       <Header />
-      <div className="mt-24">
-        <DocsLayout tree={source.pageTree} sidebar={{ enabled: false }}>
+      <div className="md:mt-24">
+        <DocsLayout
+          tree={source.pageTree}
+          nav={{ enabled: false }}
+          sidebar={{ enabled: false }}
+        >
           {children}
         </DocsLayout>
       </div>
