@@ -3,7 +3,9 @@ import { notFound } from "next/navigation";
 import BlogList from "@/components/blog/blog-list";
 import BlogPage from "@/components/blog/blog-page";
 
-export default async function Page(props: { params: { slug?: string[] } }) {
+export default async function Page(props: {
+  params: Promise<{ slug?: string[] }>;
+}) {
   const { slug } = await props.params;
 
   if (!slug) {
