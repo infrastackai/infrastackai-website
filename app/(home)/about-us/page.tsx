@@ -7,43 +7,31 @@ const people = [
     name: "Aykut Gedik",
     role: "Founder & CEO",
     image: "https://avatars.githubusercontent.com/aykutgk",
-    description:
-      "Aykut is an accomplished technology leader and entrepreneur with extensive experience.",
   },
   {
     name: "Baturalp Sönmez",
     role: "Developer",
     image: "https://avatars.githubusercontent.com/Baturalp52",
-    description:
-      "Baturalp is a versatile and passionate full-stack developer with extensive experience.",
   },
   {
     name: "Mehmet Dedeler",
     role: "Developer",
     image: "https://avatars.githubusercontent.com/mehmetdede1907",
-    description:
-      "Mehmet is a passionate and skilled problem-solver with expertise in AI.",
   },
   {
     name: "Emre Furkan Akyol",
     role: "Developer",
     image: "https://avatars.githubusercontent.com/35furkan",
-    description:
-      "Furkan is a dedicated AI engineer with a strong interest in artificial intelligence",
   },
   {
     name: "Investor #1",
     role: "Investor",
     image: "https://avatars.githubusercontent.com/35furkan",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
   },
   {
     name: "Investor #2",
     role: "Investor",
     image: "https://avatars.githubusercontent.com/35furkan",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
   },
 ];
 
@@ -132,11 +120,6 @@ export default function AboutUs() {
                     </div>
                   </div>
                 </CardHeader>
-                <CardContent>
-                  <p className="text-muted-foreground mt-2 text-base md:text-lg font-[family-name:var(--font-geist-mono)]">
-                    {person.description}
-                  </p>
-                </CardContent>
               </Card>
             ))}
           </div>
