@@ -8,21 +8,42 @@ const people = [
     role: "Founder & CEO",
     image: "https://avatars.githubusercontent.com/aykutgk",
     description:
-      "Jane brings over 10 years of experience in leading innovative teams to success.",
+      "Aykut is an accomplished technology leader and entrepreneur with extensive experience.",
   },
   {
     name: "Baturalp Sönmez",
     role: "Developer",
     image: "https://avatars.githubusercontent.com/Baturalp52",
     description:
-      "John is a tech visionary with a passion for building state-of-the-art software solutions.",
+      "Baturalp is a versatile and passionate full-stack developer with extensive experience.",
   },
   {
     name: "Mehmet Dedeler",
     role: "Developer",
     image: "https://avatars.githubusercontent.com/mehmetdede1907",
     description:
-      "Emily ensures smooth operations and exceptional customer service at every step.",
+      "Mehmet is a passionate and skilled problem-solver with expertise in AI.",
+  },
+  {
+    name: "Emre Furkan Akyol",
+    role: "Developer",
+    image: "https://avatars.githubusercontent.com/35furkan",
+    description:
+      "Furkan is a dedicated AI engineer with a strong interest in artificial intelligence",
+  },
+  {
+    name: "Investor #1",
+    role: "Investor",
+    image: "https://avatars.githubusercontent.com/35furkan",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
+  },
+  {
+    name: "Investor #2",
+    role: "Investor",
+    image: "https://avatars.githubusercontent.com/35furkan",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
   },
 ];
 
