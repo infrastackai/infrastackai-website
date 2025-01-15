@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 @layer base {
   :root {
     --background: 0 0% 100%;
@@ -31,6 +32,7 @@
     --fd-banner-height: 90px;
     --borders: #ccc;
   }
+
   .dark {
     --background: 240 10% 3.9%;
     --foreground: 0 0% 98%;
@@ -58,11 +60,17 @@
     --chart-5: 340 75% 55%;
   }
 }
+
 @layer base {
   * {
     @apply border-border;
   }
+
   body {
     @apply bg-background text-foreground;
   }
+}
+
+.glow-hover {
+  @apply transition-all duration-300 motion-reduce:transition-none border border-zinc-300 hover:border-zinc-600 dark:border-zinc-600 dark:hover:border-zinc-300;
 }
