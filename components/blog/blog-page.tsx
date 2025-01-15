@@ -2,7 +2,6 @@
 
 import { useScreenSize } from "@/hooks/use-screen-size";
 import { blog } from "@/lib/source";
-import Link from "fumadocs-core/link";
 import { InlineTOC } from "fumadocs-ui/components/inline-toc";
 import defaultMdxComponents from "fumadocs-ui/mdx";
 import { DocsBody, DocsPage } from "fumadocs-ui/page";
@@ -26,11 +25,10 @@ export default function BlogPage({ slug }: BlogPageProps) {
       toc={!isMobile && !isTablet ? page.data.toc : undefined}
       full={page.data.full}
       breadcrumb={{ enabled: false }}
-      container={{ className: "flex flex-col justify-center items-center" }}
+      container={{
+        className: "flex flex-col justify-center items-center py-12",
+      }}
     >
-      <Link href="/blog" className="mt-6 sm:mt-0 block">
-        Back to the main blog
-      </Link>
       {(isMobile || isTablet) && <InlineTOC items={page.data.toc} />}
       <DocsBody>
         <MDX components={{ ...defaultMdxComponents }} />

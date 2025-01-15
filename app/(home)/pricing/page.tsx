@@ -41,7 +41,7 @@ export default function Pricing() {
   ];
 
   return (
-    <div className="container w-full flex flex-col items-center justify-center my-12">
+    <div className="container w-full flex flex-col items-center justify-center mb-12 mt-0">
       <div className="w-full flex flex-col gap-12 items-stretch px-2 md:px-0 md:w-3/4 justify-center mt-[104px]">
         <div className="flex flex-col w-full items-start space-y-4">
           <h1 className="text-3.5xl/[2.25rem] md:text-5.5xl/[3.625rem] font-bold bg-gradient-to-b from-black via-black via-[29%] to-neutral-500 bg-clip-text text-transparent dark:from-white dark:via-white dark:to-neutral-500">
