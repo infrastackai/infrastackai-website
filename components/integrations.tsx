@@ -22,7 +22,7 @@ export default function Integrations() {
       }}
       variants={variants}
       viewport={{ once: true }}
-      className="my-24 flex flex-col space-y-12 items-center w-full max-w-full overflow-hidden"
+      className="p-16 flex flex-col space-y-4 items-center"
     >
       {/* <BentoDemo /> */}
       <div className="flex flex-col space-y-4 items-center">
@@ -44,7 +44,6 @@ export default function Integrations() {
               alt="AWS Logo"
               width={80}
               height={50}
-              className="w-full h-auto max-w-[80px]"
             />
           </div>
           <div className="flex items-center justify-center">
@@ -53,7 +52,6 @@ export default function Integrations() {
               alt="Datadog Logo"
               width={160}
               height={50}
-              className="w-full h-auto max-w-[120px]"
             />
           </div>
           <div className="flex items-center justify-center">
@@ -62,7 +60,6 @@ export default function Integrations() {
               alt="Github Logo"
               width={140}
               height={50}
-              className="w-full h-auto max-w-[100px]"
             />
           </div>
           <div className="flex items-center justify-center">
@@ -71,26 +68,24 @@ export default function Integrations() {
               alt="PagerDuty Logo"
               width={150}
               height={50}
-              className="w-full h-auto max-w-[110px]"
             />
           </div>
-          <div className="flex items-center justify-center sm:col-span-1">
+          <div className="flex items-center justify-center">
             <Image
               src="/integrations/slack.svg"
               alt="Slack Logo"
               width={150}
               height={50}
-              className="w-full h-auto max-w-[100px]"
             />
           </div>
         </div>
+        <Link
+          href={`/docs`}
+          className="text-violet-500 flex items-center justify-start text-lg font-[family-name:var(--font-geist-sans)] hover:underline"
+        >
+          View all integrations <ArrowUpRight className="h-6 w-6 inline" />
+        </Link>
       </div>
-      <Link
-        href={`/docs`}
-        className="text-violet-500 flex items-center justify-start text-lg font-[family-name:var(--font-geist-sans)] hover:underline"
-      >
-        View all integrations <ArrowUpRight className="h-6 w-6 inline" />
-      </Link>
     </motion.div>
   );
 }
