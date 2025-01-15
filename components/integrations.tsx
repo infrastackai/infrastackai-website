@@ -22,15 +22,15 @@ export default function Integrations() {
       }}
       variants={variants}
       viewport={{ once: true }}
-      className="p-16 flex flex-col space-y-4 items-center"
+      className="p-4 md:p-16 flex flex-col space-y-4 items-center"
     >
       {/* <BentoDemo /> */}
       <div className="flex flex-col space-y-4 items-center">
         {/* Integrates with the tools you already use */}
-        <h3 className="text-center font-semibold trackin text-5xl bg-gradient-to-b from-black via-black via-[29%] to-neutral-500 bg-clip-text text-transparent dark:from-white dark:via-white dark:to-neutral-500">
+        <h3 className="text-center font-semibold trackin text-3.5xl/[2.25rem] md:text-5.5xl/[3.625rem] bg-gradient-to-b from-black via-black via-[29%] to-neutral-500 bg-clip-text text-transparent dark:from-white dark:via-white dark:to-neutral-500">
           Integrations
         </h3>
-        <p className="text-muted-foreground text-lg font-[family-name:var(--font-geist-mono)] w-[80%] text-center">
+        <p className="text-sm text-muted-foreground md:text-lg font-[family-name:var(--font-geist-mono)] w-[80%] text-center">
           Integrate seamlessly with your existing cloud providers, monitoring,
           security, and workflow tools to create a unified operational
           environment

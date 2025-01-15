@@ -13,12 +13,14 @@ export default function BlogList() {
 
   return (
     <div className="mt-24 md:mt-8 px-6 md:px-24 pb-16 md:pb-24 w-full font-[family-name:var(--font-geist-sans)]">
-      <h1 className="text-3.5xl/[2.25rem] md:text-5.5xl/[3.625rem] font-bold bg-gradient-to-b from-black via-black via-[29%] to-neutral-500 bg-clip-text text-transparent dark:from-white dark:via-white dark:to-neutral-500">
-        Blog.
-      </h1>
-      <p className="text-muted-foreground mt-2 text-base md:text-lg font-[family-name:var(--font-geist-mono)]">
-        Compiled collection of team insights
-      </p>
+      <div className="flex flex-col space-y-4 items-center md:items-start mt-8">
+        <h1 className="text-3.5xl/[2.25rem] md:text-5.5xl/[3.625rem] font-bold bg-gradient-to-b from-black via-black via-[29%] to-neutral-500 bg-clip-text text-transparent dark:from-white dark:via-white dark:to-neutral-500">
+          Blog
+        </h1>
+        <p className="text-muted-foreground mt-2 text-sm md:text-lg font-[family-name:var(--font-geist-mono)]">
+          Compiled collection of team insights
+        </p>
+      </div>
       <div className="mt-8 md:mt-12">
         <HeroPost
           title={heroPost.data.title}

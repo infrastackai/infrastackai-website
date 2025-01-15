@@ -20,15 +20,15 @@ export default function JoinOurCrew() {
       }}
       variants={variants}
       viewport={{ once: true }}
-      className="flex flex-col space-y-4 my-24 items-center"
+      className="flex flex-col space-y-4 my-12 md:my-24 items-center"
     >
       <div className="">
         {/* Integrates with the tools you already use */}
-        <p className="text-center font-semibold trackin text-5xl bg-gradient-to-b from-black via-black via-[29%] to-neutral-500 bg-clip-text text-transparent dark:from-white dark:via-white dark:to-neutral-500">
+        <p className="text-center font-semibold trackin text-3.5xl/[2.25rem] md:text-5.5xl/[3.625rem] bg-gradient-to-b from-black via-black via-[29%] to-neutral-500 bg-clip-text text-transparent dark:from-white dark:via-white dark:to-neutral-500">
           Join our crew
         </p>
       </div>
-      <div className="text-muted-foreground text-lg font-[family-name:var(--font-geist-mono)] w-[80%] text-center">
+      <div className="text-muted-foreground text-sm md:text-lg font-[family-name:var(--font-geist-mono)] w-[80%] text-center">
         We are building a team of passionate individuals who are excited about
         the future of AI in software operations <br />
         And we need talented people like you to join us on this journey

@@ -58,7 +58,7 @@ export default function HeroBox() {
         </p>
       </div>
       {true && (
-        <h1 className="mb-6 text-3xl md:text-5xl text-center font-bold font-[family-name:var(--font-geist-sans)]">
+        <h1 className="mb-6 text-3.5xl/[2.25rem] md:text-5.5xl/[3.625rem] md:text-5xl text-center font-bold font-[family-name:var(--font-geist-sans)]">
           {words.map((word, index) => (
             <React.Fragment key={index}>
               <motion.span
@@ -74,23 +74,23 @@ export default function HeroBox() {
         </h1>
       )}
       {true && (
-        <motion.p
-          className="text-center text-lg md:text-2xl font-semibold mb-8 leading-7 md:leading-9 dark:bg-black dark:bg-opacity-50 bg-white bg-opacity-50 p-2 rounded-2xl"
-          transition={transition}
-          variants={variants}
-        >
-          Supercharge{" "}
-          <span className="text-violet-500 font-bold">Infrastructure</span>,{" "}
-          <span className="text-violet-500 font-bold">SRE</span>, and{" "}
-          <span className="text-violet-500 font-bold">DevOps</span> with AI
-          Agents
-          <br />
-          Transform repetitive and time-consuming tasks into autonomous
-          workflows
-          <br />
-          Save time, reduce errors, and improve productivity
+        <ul className="text-left md:text-center text-sm md:text-2xl font-[family-name:var(--font-geist-mono)] font-semibold mb-8 leading-7 md:leading-9 dark:bg-black dark:bg-opacity-50 bg-white bg-opacity-50 p-2 rounded-2xl">
+          <motion.li transition={transition} variants={variants}>
+            Supercharge{" "}
+            <span className="text-violet-500 font-bold">Infrastructure</span>,{" "}
+            <span className="text-violet-500 font-bold">SRE</span>, and{" "}
+            <span className="text-violet-500 font-bold">DevOps</span> with AI
+            Agents
+          </motion.li>
+          <motion.li transition={transition} variants={variants}>
+            Transform repetitive and time-consuming tasks into autonomous
+            workflows
+          </motion.li>
+          <motion.li transition={transition} variants={variants}>
+            Save time, reduce errors, and improve productivity
+          </motion.li>
           {/* <span className="font-bold text-violet-500">From <span className="text-violet-500">chaos</span> to calm:</span> unleash the power of AI Agents <br /> to transform <span className="text-violet-500 font-bold">Infrastructure</span>, <span className="text-violet-500 font-bold">SRE</span> & <span className="text-violet-500 font-bold">DevOps</span> tasks into autonomous actions */}
-        </motion.p>
+        </ul>
       )}
       <div className="flex gap-4">
         <motion.div transition={transition} variants={variants}>
