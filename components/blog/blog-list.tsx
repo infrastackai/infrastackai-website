@@ -12,7 +12,7 @@ export default function BlogList() {
   pages.splice(pages.indexOf(heroPost), 1);
 
   return (
-    <div className="mt-[104px] md:mt-[144px] px-6 md:px-24 pb-16 md:pb-24 w-full font-[family-name:var(--font-geist-sans)]">
+    <div className="mt-24 md:mt-8 px-6 md:px-24 pb-16 md:pb-24 w-full font-[family-name:var(--font-geist-sans)]">
       <h1 className="text-4xl md:text-7xl font-bold bg-gradient-to-b from-black via-black via-[29%] to-neutral-500 bg-clip-text text-transparent dark:from-white dark:via-white dark:to-neutral-500">
         Blog.
       </h1>

@@ -12,7 +12,7 @@ type BlogPageProps = {
   slug: string[];
 };
 export default function BlogPage({ slug }: BlogPageProps) {
-  const { isMobile } = useScreenSize();
+  const { isMobile, isTablet } = useScreenSize();
   const page = blog.getPage(slug);
   if (!page) notFound();
 
@@ -23,14 +23,15 @@ export default function BlogPage({ slug }: BlogPageProps) {
         style: "clerk",
       }}
       lastUpdate={new Date(Date.now())}
-      toc={!isMobile ? page.data.toc : undefined}
+      toc={!isMobile && !isTablet ? page.data.toc : undefined}
       full={page.data.full}
       breadcrumb={{ enabled: false }}
+      container={{ className: "flex flex-col justify-center items-center" }}
     >
       <Link href="/blog" className="mt-6 sm:mt-0 block">
         Back to the main blog
       </Link>
-      {isMobile && <InlineTOC items={page.data.toc} />}
+      {(isMobile || isTablet) && <InlineTOC items={page.data.toc} />}
       <DocsBody>
         <MDX components={{ ...defaultMdxComponents }} />
       </DocsBody>

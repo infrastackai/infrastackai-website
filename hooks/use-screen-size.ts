@@ -11,8 +11,8 @@ export function useScreenSize() {
     const handleResize = () => {
       setScreenSize({
         isMobile: window.innerWidth < 640,
-        isTablet: window.innerWidth >= 640 && window.innerWidth < 1024,
-        isDesktop: window.innerWidth >= 1024,
+        isTablet: window.innerWidth >= 640 && window.innerWidth < 1280,
+        isDesktop: window.innerWidth >= 1280,
       });
     };
 
