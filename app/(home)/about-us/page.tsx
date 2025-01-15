@@ -31,7 +31,7 @@ export default function AboutUs() {
     <div className="container w-full flex flex-col items-center justify-center my-12">
       <div className="flex flex-col gap-12 items-stretch px-4 md:px-0 md:w-3/4 justify-center min-h-screen relative mt-[104px] overflow-hidden space-y-4">
         <div className="flex-col items-start justify-start">
-          <h1 className="text-4xl md:text-7xl font-bold bg-gradient-to-b from-black via-black via-[29%] to-neutral-500 bg-clip-text text-transparent dark:from-white dark:via-white dark:to-neutral-500">
+          <h1 className="text-3.5xl/[2.25rem] md:text-5.5xl/[3.625rem] font-bold bg-gradient-to-b from-black via-black via-[29%] to-neutral-500 bg-clip-text text-transparent dark:from-white dark:via-white dark:to-neutral-500">
             About Us.
           </h1>
           <p className="text-muted-foreground mt-2 text-base md:text-lg font-[family-name:var(--font-geist-mono)]">
