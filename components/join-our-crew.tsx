@@ -35,7 +35,7 @@ export default function JoinOurCrew() {
       </div>
       <div></div>
       <div></div>
-      <div className="flex-1 bg-background min-w-[280px] md:min-w-[400px] border glow-hover p-4 md:p-6 rounded-xl items-center flex flex-row space-x-4">
+      <div className="flex-1 bg-background min-w-[340px] md:min-w-[400px] border glow-hover p-4 md:p-6 rounded-xl items-center flex flex-row space-x-4">
         <div className="p-2 bg-violet-500 rounded-xl w-fit">
           <Briefcase className="h-5 w-5 md:h-6 md:w-6 text-white" />
         </div>
@@ -48,7 +48,7 @@ export default function JoinOurCrew() {
           </p>
         </div>
       </div>
-      <div className="flex-1 bg-background min-w-[280px] md:min-w-[400px] border glow-hover p-4 md:p-6 rounded-xl items-center flex flex-row space-x-4">
+      <div className="flex-1 bg-background min-w-[340px] md:min-w-[400px] border glow-hover p-4 md:p-6 rounded-xl items-center flex flex-row space-x-4">
         <div className="p-2 bg-violet-500 rounded-xl w-fit">
           <Briefcase className="h-5 w-5 md:h-6 md:w-6 text-white" />
         </div>
@@ -61,7 +61,7 @@ export default function JoinOurCrew() {
           </p>
         </div>
       </div>
-      <div className="flex-1 bg-background min-w-[280px] md:min-w-[400px] border glow-hover p-4 md:p-6 rounded-xl items-center flex flex-row space-x-4">
+      <div className="flex-1 bg-background min-w-[340px] md:min-w-[400px] border glow-hover p-4 md:p-6 rounded-xl items-center flex flex-row space-x-4">
         <div className="p-2 bg-violet-500 rounded-xl w-fit">
           <Briefcase className="h-5 w-5 md:h-6 md:w-6 text-white" />
         </div>
@@ -74,7 +74,7 @@ export default function JoinOurCrew() {
           </p>
         </div>
       </div>
-      <div className="flex-1 bg-background min-w-[280px] md:min-w-[400px] border glow-hover p-4 md:p-6 rounded-xl items-center flex flex-row space-x-4">
+      <div className="flex-1 bg-background min-w-[340px] md:min-w-[400px] border glow-hover p-4 md:p-6 rounded-xl items-center flex flex-row space-x-4">
         <div className="p-2 bg-violet-500 rounded-xl w-fit">
           <Briefcase className="h-5 w-5 md:h-6 md:w-6 text-white" />
         </div>

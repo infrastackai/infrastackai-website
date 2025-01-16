@@ -97,10 +97,9 @@ export default function Header() {
         {/* Mobile Header - Always visible */}
         <div
           className={cn(
-            scrolled &&
-              "border-b border-zinc-50 shadow-sm dark:border-zinc-900",
-            !scrolled && "border-b border-transparent",
-            "m-4 rounded-xl bg-zinc-50 dark:bg-black",
+            scrolled && "border-zinc-50 shadow-sm dark:border-zinc-900",
+            !scrolled && "border-transparent",
+            "border m-4 rounded-xl bg-zinc-50 dark:bg-black",
             "fixed md:hidden right-0 left-0 top-0 h-14 px-4 flex items-center justify-between z-[60]",
             "transition-all duration-500 ease-in-out"
           )}

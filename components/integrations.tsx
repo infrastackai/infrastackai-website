@@ -22,7 +22,7 @@ export default function Integrations() {
       }}
       variants={variants}
       viewport={{ once: true }}
-      className="p-4 md:p-16 flex flex-col space-y-4 items-center"
+      className="my-12 p-4 md:p-16 flex flex-col space-y-4 items-center"
     >
       {/* <BentoDemo /> */}
       <div className="flex flex-col space-y-4 items-center">
