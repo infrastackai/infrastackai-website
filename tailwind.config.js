@@ -63,6 +63,12 @@ export default {
         },
       },
       fontSize: {
+        "3.5xl": [
+          "2.125rem",
+          {
+            lineHeight: "2.25rem",
+          },
+        ],
         "5.5xl": [
           "3.25rem",
           {

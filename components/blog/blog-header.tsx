@@ -18,9 +18,9 @@ export const BlogHeader = ({
   date?: number;
   ogImage?: string;
 }) => (
-  <div className="flex flex-col gap-1 items-center my-10 text-center">
+  <div className="flex flex-col gap-1 sm:gap-2 items-center text-center px-4 sm:px-0">
     {ogImage && (
-      <div className="mt-4 rounded relative aspect-video overflow-hidden w-full">
+      <div className="mt-2 sm:mt-4 rounded relative aspect-video overflow-hidden w-full">
         <Image
           src={ogImage}
           className="object-cover transform group-hover:scale-105 transition-transform"
@@ -30,15 +30,19 @@ export const BlogHeader = ({
         />
       </div>
     )}
-    <h1 className="font-bold leading-snug text-balance">{title}</h1>
-    <p className="text-primary/60 text-xl text-balance">{description}</p>
-    <div className="flex items-center gap-4">
-      <Avatar className="w-12 h-12">
+    <h1 className="text-2xl sm:text-3xl font-bold leading-snug text-balance">
+      {title}
+    </h1>
+    <p className="text-primary/60 text-lg sm:text-xl text-balance">
+      {description}
+    </p>
+    <div className="flex items-center gap-3 sm:gap-4 mt-2 sm:mt-0">
+      <Avatar className="w-10 h-10 sm:w-12 sm:h-12">
         <AvatarImage src={authorPicture} className="m-0" />
         <AvatarFallback>{generateAvatarFallback(author || "")}</AvatarFallback>
       </Avatar>
-      <div className="flex flex-col items-start gap-1">
-        <div className="text-xl font-bold">{author}</div>
+      <div className="flex flex-col items-start gap-0.5 sm:gap-1">
+        <div className="text-lg sm:text-xl font-bold">{author}</div>
         <div className="text-primary/60 text-xs">
           <DateFormatter dateString={date || new Date()} />
         </div>

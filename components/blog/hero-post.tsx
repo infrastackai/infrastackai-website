@@ -48,7 +48,7 @@ export function HeroPost({
             <h2 className="text-3.5xl/[2.25rem] font-semibold -tracking-4 md:text-5.5xl/[3.625rem] text-balance">
               {title}
             </h2>
-            <p className="[&_b]:md:font-semibold [&_strong]:md:font-semibold font-mono text-base/[1.25rem] md:text-1.5xl/[1.6875rem] text-brand-neutrals-600 dark:text-neutral-400">
+            <p className="[&_b]:md:font-semibold [&_strong]:md:font-semibold font-mono text-base/[1.25rem] md:text-1.5xl/[1.6875rem] text-brand-neutrals-600 dark:text-neutral-400 line-clamp-2 md:line-clamp-none">
               {excerpt}
             </p>
           </div>

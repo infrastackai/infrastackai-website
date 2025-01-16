@@ -9,10 +9,12 @@ import "./blog.css";
 export default function Layout({ children }: { children: ReactNode }) {
   return (
     <>
-      <div className="mt-24">
+      <div className="md:mt-24">
         <DocsLayout
           nav={{ component: <Header /> }}
-          tree={source.pageTree} sidebar={{ enabled: false }}>
+          tree={source.pageTree}
+          sidebar={{ enabled: false }}
+        >
           {children}
         </DocsLayout>
       </div>
