@@ -21,19 +21,18 @@ export default function LearnMore() {
       }}
       variants={variants}
       viewport={{ once: true }}
-      className="flex flex-col space-y-4 mt-12 md:mt-24 mb-16 md:mb-36 items-center px-4 md:px-16 w-full max-w-full overflow-hidden"
+      className="flex flex-col space-y-3 sm:space-y-4 mb-20 md:mb-36 items-center  w-full"
     >
       <div className="">
         {/* Integrates with the tools you already use */}
-        <p className="text-center font-semibold text-3.5xl/[2.25rem] md:text-5.5xl/[3.625rem] bg-gradient-to-b from-black via-black via-[29%] to-neutral-500 bg-clip-text text-transparent dark:from-white dark:via-white dark:to-neutral-500">
+        <p className="text-center font-semibold text-3xl sm:text-4xl md:text-5xl  bg-gradient-to-b from-black via-black via-[29%] to-neutral-500 bg-clip-text text-transparent dark:from-white dark:via-white dark:to-neutral-500">
           Learn more about InfraStack
         </p>
       </div>
-      <div className="text-muted-foreground text-sm md:text-lg font-[family-name:var(--font-geist-mono)] w-[90%] md:w-[80%] text-center">
+      <div className="text-muted-foreground sm:text-lg font-[family-name:var(--font-geist-mono)] w-[90%] md:w-[50%] text-center">
         Talk to our team of experts to learn more about how InfraStack can help
         you automate your operations
       </div>
-      <div></div>
       <div></div>
       <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4">
         <Button
@@ -45,14 +44,14 @@ export default function LearnMore() {
           }}
           variant="default"
           size="lg"
-          className="bg-violet-500 hover:bg-violet-500/90 text-white h-12"
+          className="infrastack-button"
         >
           <Headset /> Talk to our team
         </Button>
-        <Button variant="outline" size="lg" disabled className="h-12">
+        {/* <Button variant="outline" size="lg" disabled className="h-12">
           <Slack />
           Join our Slack
-        </Button>
+        </Button> */}
       </div>
     </motion.div>
   );
