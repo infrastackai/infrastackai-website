@@ -50,7 +50,7 @@ export default function JoinOurCrew() {
       <div></div>
       <div></div>
       <Link target="_blank" href={'https://infrastackai.notion.site/Careers-at-InfraStack-AI-2f07b3b32b0740c9b16aafa09d7bd864'}>
-        <div className="flex-1 bg-background min-w-[360px] md:min-w-[460px] border glow-hover p-4 md:p-6 rounded-xl items-center flex flex-row space-x-6">
+        <div className="flex-1 bg-background min-w-[360px] md:min-w-[460px] border glow-hover p-4 md:p-6 rounded-xl items-center flex flex-row space-x-4">
           <div className="p-2 border rounded-xl w-fit">
             <Image
               src={
@@ -75,7 +75,7 @@ export default function JoinOurCrew() {
         </div>
       </Link>
       <Link target="_blank" href={'https://infrastackai.notion.site/Careers-at-InfraStack-AI-2f07b3b32b0740c9b16aafa09d7bd864'}>
-        <div className="flex-1 bg-background min-w-[360px] md:min-w-[460px] border glow-hover p-4 md:p-6 rounded-xl items-center flex flex-row space-x-6">
+        <div className="flex-1 bg-background min-w-[360px] md:min-w-[460px] border glow-hover p-4 md:p-6 rounded-xl items-center flex flex-row space-x-4">
           <div className="p-2 border rounded-xl w-fit">
             <Image
               src={
@@ -100,7 +100,7 @@ export default function JoinOurCrew() {
         </div>
       </Link>
       <Link target="_blank" href={'https://infrastackai.notion.site/Careers-at-InfraStack-AI-2f07b3b32b0740c9b16aafa09d7bd864'}>
-        <div className="flex-1 bg-background min-w-[360px] md:min-w-[460px] border glow-hover p-4 md:p-6 rounded-xl items-center flex flex-row space-x-6">
+        <div className="flex-1 bg-background min-w-[360px] md:min-w-[460px] border glow-hover p-4 md:p-6 rounded-xl items-center flex flex-row space-x-4">
           <div className="p-2 border rounded-xl w-fit">
             <Image
               src={

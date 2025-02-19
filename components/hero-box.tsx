@@ -22,7 +22,7 @@ export default function HeroBox() {
             transition={{ staggerChildren: 0.04 }}
             viewport={{ once: true }}
         >
-            <h1 className="text-center mb-6 text-5xl font-bold md:text-6xl lg:text-7xl font-[family-name:var(--font-geist-sans)]  ">
+            <h1 className="text-center mb-6 text-5xl font-semibold md:text-6xl lg:text-8xl font-[family-name:var(--font-geist-sans)]  ">
                 {words.map((word, index) => (
                     <React.Fragment key={index}>
                         <motion.span className="inline-block" transition={transition} variants={variants}>
