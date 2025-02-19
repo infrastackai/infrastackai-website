@@ -10,7 +10,7 @@ const variants = {
     visible: { filter: "blur(0)", transform: "translateY(0)", opacity: 1 },
 };
 
-const text = "Autonomous Operations";
+const text = "Automated Operations";
 
 export default function HeroBox() {
     const words = text.split(" ");
@@ -22,7 +22,7 @@ export default function HeroBox() {
             transition={{ staggerChildren: 0.04 }}
             viewport={{ once: true }}
         >
-            <h1 className="text-center mb-6 text-5xl font-bold md:text-7xl font-[family-name:var(--font-geist-sans)]">
+            <h1 className="text-center mb-6 text-5xl font-bold md:text-6xl lg:text-7xl font-[family-name:var(--font-geist-sans)]  ">
                 {words.map((word, index) => (
                     <React.Fragment key={index}>
                         <motion.span className="inline-block" transition={transition} variants={variants}>
@@ -33,7 +33,7 @@ export default function HeroBox() {
                 ))}
             </h1>
             <motion.p className="text-center text-lg md:lg:text-xl lg:text-2xl leading-9 md:leading-12 lg:leading-10 font-semibold mb-6 sm:mb-8  dark:bg-black dark:bg-opacity-50 bg-white bg-opacity-50 p-2" transition={transition} variants={variants}>
-                <span className="bg-gradient-to-r from-violet-500 to-violet-500  dark:bg-violet-500 border rounded-lg p-1 pl-2 pr-2 text-white">From chaos to calm</span> Leverage AI to transform <span className="bg-violet-500 dark:bg-violet-500 border rounded-lg p-1 pl-2 pr-2 text-white ">Infra</span>, <span className="bg-violet-500 dark:bg-violet-500 border rounded-lg p-1 pl-2 pr-2 text-white ">SRE</span>, <span className="bg-violet-500 dark:bg-violet-500 border rounded-lg p-1 pl-2 pr-2 text-white ">DevOps</span> & <span className="bg-violet-500 dark:bg-violet-500 border rounded-lg p-1 pl-2 pr-2 text-white">SecOps</span> into autonomous actions<br className="" />Automate Infra tasks, triage alerts, detect vulnerabilities, reduce costs <br className="" /> Without the manual workload so your team can focus on building, not firefighting
+                <span className="bg-gradient-to-r from-violet-500 to-violet-500  dark:bg-violet-500 border rounded-lg p-1 pl-2 pr-2 text-white">From chaos to calm</span> Leverage AI to transform <span className="bg-violet-500 dark:bg-violet-500 border rounded-lg p-1 pl-2 pr-2 text-white ">Infra</span>, <span className="bg-violet-500 dark:bg-violet-500 border rounded-lg p-1 pl-2 pr-2 text-white ">SRE</span>, <span className="bg-violet-500 dark:bg-violet-500 border rounded-lg p-1 pl-2 pr-2 text-white ">DevOps</span> & <span className="bg-violet-500 dark:bg-violet-500 border rounded-lg p-1 pl-2 pr-2 text-white">SecOps</span> into autonomous workflows<br className="" />Automate tasks, triage alerts, detect vulnerabilities, reduce costs <br className="" /> So your team can focus on building, not firefighting
             </motion.p>
             <div className="flex gap-4 items-center flex-row justify-center">
                 <motion.div transition={transition} variants={variants}>
