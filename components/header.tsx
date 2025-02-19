@@ -155,16 +155,16 @@ export default function Header() {
         {/* Full Screen Mobile Menu */}
         <div
           className={cn(
-            "container fixed left-0 top-0 flex h-dvh w-full flex-col justify-between bg-brand-light-grey-wash !px-8 pb-4 pt-[4.4rem] transition-none dark:bg-brand-white md:!px-10 visible opacity-100",
+            "container fixed items-center left-0 top-0 flex h-dvh w-full flex-col justify-between bg-brand-light-grey-wash !px-8 pb-4 pt-[4.4rem] transition-none dark:bg-brand-white md:!px-10 visible opacity-100",
             "fixed inset-0 z-50 md:hidden bg-background dark:bg-black transition-transform duration-300 ease-in-out pt-20 px-4",
             mobileMenuOpen ? "translate-y-0" : "-translate-y-full"
           )}
         >
-          <ul className="flex flex-col space-y-6">
+          <ul className="flex flex-col space-y-6 mt-4">
             {MENU_LINKS.map((link) => (
               <li
                 key={link.label}
-                className="text-3.5xl/[2.25rem] font-semibold -tracking-4 md:text-5.5xl/[3.625rem]"
+                className="text-3xl font-semibold -tracking-4 md:text-5.5xl/[3.625rem]"
               >
                 <Link
                   href={link.href}
