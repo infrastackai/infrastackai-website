@@ -32,7 +32,7 @@ export default function HeroBox() {
                     </React.Fragment>
                 ))}
             </h1>
-            <motion.p className="text-center text-lg font-semibold mb-6 sm:mb-8 leading-9  dark:bg-black dark:bg-opacity-50 bg-white bg-opacity-50 p-2 rounded-2xl" transition={transition} variants={variants}>
+            <motion.p className="text-center text-lg md:lg:text-xl lg:text-2xl leading-9 md:leading-12 lg:leading-10 font-semibold mb-6 sm:mb-8  dark:bg-black dark:bg-opacity-50 bg-white bg-opacity-50 p-2" transition={transition} variants={variants}>
                 <span className="bg-gradient-to-r from-violet-500 to-violet-500  dark:bg-violet-500 border rounded-lg p-1 pl-2 pr-2 text-white">From chaos to calm</span> Leverage AI to transform <span className="bg-violet-500 dark:bg-violet-500 border rounded-lg p-1 pl-2 pr-2 text-white ">Infra</span>, <span className="bg-violet-500 dark:bg-violet-500 border rounded-lg p-1 pl-2 pr-2 text-white ">SRE</span>, <span className="bg-violet-500 dark:bg-violet-500 border rounded-lg p-1 pl-2 pr-2 text-white ">DevOps</span> & <span className="bg-violet-500 dark:bg-violet-500 border rounded-lg p-1 pl-2 pr-2 text-white">SecOps</span> into autonomous actions<br className="" />Automate Infra tasks, triage alerts, detect vulnerabilities, reduce costs <br className="" /> Without the manual workload so your team can focus on building, not firefighting
             </motion.p>
             <div className="flex gap-4 items-center flex-row justify-center">
