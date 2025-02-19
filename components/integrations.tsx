@@ -22,23 +22,24 @@ export default function Integrations() {
       }}
       variants={variants}
       viewport={{ once: true }}
-      className="my-12 p-4 md:p-16 flex flex-col space-y-4 items-center"
+      className="p-4 flex flex-col space-y-3 sm:space-y-4 mb-24 md:mb-36 items-center"
     >
       {/* <BentoDemo /> */}
       <div className="flex flex-col space-y-4 items-center">
         {/* Integrates with the tools you already use */}
-        <h3 className="text-center font-semibold trackin text-3.5xl/[2.25rem] md:text-5.5xl/[3.625rem] bg-gradient-to-b from-black via-black via-[29%] to-neutral-500 bg-clip-text text-transparent dark:from-white dark:via-white dark:to-neutral-500">
+        <h3 className="text-center font-semibold trackin text-3xl sm:text-4xl md:text-5xl bg-gradient-to-b from-black via-black via-[29%] to-neutral-500 bg-clip-text text-transparent dark:from-white dark:via-white dark:to-neutral-500">
           Integrations
         </h3>
-        <p className="text-sm text-muted-foreground md:text-lg font-[family-name:var(--font-geist-mono)] w-[80%] text-center">
+        <p className="text-muted-foreground sm:text-lg font-[family-name:var(--font-geist-mono)] md:w-[60%] text-center">
           Integrate seamlessly with your existing cloud providers, monitoring,
-          security, and workflow tools to create a unified operational
+          security, and productivity tools to create a unified operational
           environment
         </p>
       </div>
+      <div></div>
       <div className="flex items-center flex-col">
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-8 px-4 w-full max-w-[1200px]">
-          <div className="flex items-center justify-center">
+        <div className="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-4 lg:grid-cols-5 space-x-4 w-full max-w-[1200px]">
+          <div className="flex justify-center items-center w-36 ">
             <Image
               src="/integrations/aws.svg"
               alt="AWS Logo"
@@ -46,7 +47,7 @@ export default function Integrations() {
               height={50}
             />
           </div>
-          <div className="flex items-center justify-center">
+          <div className="flex  justify-center items-center w-36">
             <Image
               src="/integrations/datadog.svg"
               alt="Datadog Logo"
@@ -54,7 +55,7 @@ export default function Integrations() {
               height={50}
             />
           </div>
-          <div className="flex items-center justify-center">
+          <div className="flex items-center w-36 justify-center">
             <Image
               src="/integrations/github.svg"
               alt="Github Logo"
@@ -62,7 +63,7 @@ export default function Integrations() {
               height={50}
             />
           </div>
-          <div className="flex items-center justify-center">
+          <div className="flex items-center w-36 justify-center">
             <Image
               src="/integrations/pagerduty.svg"
               alt="PagerDuty Logo"
@@ -70,7 +71,7 @@ export default function Integrations() {
               height={50}
             />
           </div>
-          <div className="flex items-center justify-center">
+          <div className="flex items-center w-36 justify-center">
             <Image
               src="/integrations/slack.svg"
               alt="Slack Logo"

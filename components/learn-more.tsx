@@ -21,7 +21,7 @@ export default function LearnMore() {
       }}
       variants={variants}
       viewport={{ once: true }}
-      className="flex flex-col space-y-3 sm:space-y-4 mb-20 md:mb-36 items-center  w-full"
+      className="flex flex-col space-y-3 sm:space-y-4 mb-24 md:mb-36 items-center  w-full"
     >
       <div className="">
         {/* Integrates with the tools you already use */}
