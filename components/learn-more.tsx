@@ -21,11 +21,11 @@ export default function LearnMore() {
       }}
       variants={variants}
       viewport={{ once: true }}
-      className="flex flex-col space-y-3 sm:space-y-4 mb-24 md:mb-36 items-center  w-full"
+      className="flex flex-col space-y-3 sm:space-y-4 mb-16 md:mb-36 items-center  w-full"
     >
       <div className="">
         {/* Integrates with the tools you already use */}
-        <p className="text-center font-semibold text-3xl sm:text-4xl md:text-5xl  bg-gradient-to-b from-black via-black via-[29%] to-neutral-500 bg-clip-text text-transparent dark:from-white dark:via-white dark:to-neutral-500">
+        <p className="text-center font-semibold text-4xl md:text-5xl  bg-gradient-to-b from-black via-black via-[29%] to-neutral-500 bg-clip-text text-transparent dark:from-white dark:via-white dark:to-neutral-500">
           Learn more about InfraStack
         </p>
       </div>
