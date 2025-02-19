@@ -38,8 +38,8 @@ export default function Integrations() {
       </div>
       <div></div>
       <div className="flex items-center flex-col">
-        <div className="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-4 lg:grid-cols-5 space-x-4 w-full max-w-[1200px]">
-          <div className="flex justify-center items-center w-36 ">
+        <div className="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-4 lg:grid-cols-5 gap-2 w-full max-w-[1200px]">
+          <div className="flex justify-center items-center w-36 h-16">
             <Image
               src="/integrations/aws.svg"
               alt="AWS Logo"
@@ -47,7 +47,7 @@ export default function Integrations() {
               height={50}
             />
           </div>
-          <div className="flex  justify-center items-center w-36">
+          <div className="flex  justify-center items-center w-36 h-16">
             <Image
               src="/integrations/datadog.svg"
               alt="Datadog Logo"
@@ -55,7 +55,7 @@ export default function Integrations() {
               height={50}
             />
           </div>
-          <div className="flex items-center w-36 justify-center">
+          <div className="flex items-center w-36 justify-center h-16">
             <Image
               src="/integrations/github.svg"
               alt="Github Logo"
@@ -63,7 +63,7 @@ export default function Integrations() {
               height={50}
             />
           </div>
-          <div className="flex items-center w-36 justify-center">
+          <div className="flex items-center w-36 justify-center h-16">
             <Image
               src="/integrations/pagerduty.svg"
               alt="PagerDuty Logo"
@@ -71,18 +71,20 @@ export default function Integrations() {
               height={50}
             />
           </div>
-          <div className="flex items-center w-36 justify-center">
+          <div className="flex items-center justify-center col-span-full lg:col-span-1 lg:w-36 h-16">
             <Image
               src="/integrations/slack.svg"
               alt="Slack Logo"
               width={150}
               height={50}
+              className=""
             />
           </div>
         </div>
+        <div className="h-4"></div>
         <Link
           href={`/docs`}
-          className="text-violet-500 flex items-center justify-start text-lg font-[family-name:var(--font-geist-sans)] hover:underline"
+          className="text-violet-500 flex items-center justify-start text-lg font-[family-name:var(--font-geist-sans)] hover:underline "
         >
           View all integrations <ArrowUpRight className="h-6 w-6 inline" />
         </Link>
