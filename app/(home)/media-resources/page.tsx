@@ -44,7 +44,7 @@ export default function Page() {
           rel="noopener noreferrer"
           className="text-violet-500 flex items-center justify-start text-lg font-[family-name:var(--font-geist-sans)] hover:underline "
         >
-          Download media kit <ArrowUpRight className="h-6 w-6 inline" />
+          Download our media kit <ArrowUpRight className="h-6 w-6 inline" />
         </Link>
             </div>
         </div>
