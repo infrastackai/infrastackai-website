@@ -1,4 +1,4 @@
-import { ArrowUpRight } from "lucide-react";
+import { ArrowUpRight, Download } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -44,7 +44,7 @@ export default function Page() {
           rel="noopener noreferrer"
           className="text-violet-500 flex items-center justify-start text-lg font-[family-name:var(--font-geist-sans)] hover:underline "
         >
-          Download our media kit <ArrowUpRight className="h-6 w-6 inline" />
+          Download our media kit <Download className="h-5 w-5 inline ml-[6px]" />
         </Link>
             </div>
         </div>
