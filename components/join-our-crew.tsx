@@ -49,7 +49,7 @@ export default function JoinOurCrew() {
       </div>
       <div></div>
       <div></div>
-      <Link target="_blank" href={'https://infrastackai.notion.site/Careers-at-InfraStack-AI-2f07b3b32b0740c9b16aafa09d7bd864'}>
+      <Link target="_blank" href={'https://infrastackai.notion.site/Founding-Engineer-1-5a8436f489c942888bcf205a98421424'}>
         <div className="flex-1 bg-background min-w-[360px] md:min-w-[460px] border glow-hover p-4 md:p-6 rounded-xl items-center flex flex-row space-x-4">
           <div className="p-2 border rounded-xl w-fit">
             <Image
@@ -66,15 +66,15 @@ export default function JoinOurCrew() {
           </div>
           <div className="flex flex-col">
             <p className="font-semibold text-xl md:text-2xl bg-gradient-to-b from-black via-black via-[29%] to-neutral-500 bg-clip-text text-transparent dark:from-white dark:via-white dark:to-neutral-500">
-            Lead Founding Engineer
+            Founding Engineer (#1)
             </p>
             <p className="text-muted-foreground text-base md:text-lg font-[family-name:var(--font-geist-mono)]">
-              San Francisco, CA
+            San Francisco or New York City
             </p>
           </div>
         </div>
       </Link>
-      <Link target="_blank" href={'https://infrastackai.notion.site/Careers-at-InfraStack-AI-2f07b3b32b0740c9b16aafa09d7bd864'}>
+      <Link target="_blank" href={'https://infrastackai.notion.site/AI-Engineer-Intern-1b4a5c2d9e32808690a3ca9621c1eb84'}>
         <div className="flex-1 bg-background min-w-[360px] md:min-w-[460px] border glow-hover p-4 md:p-6 rounded-xl items-center flex flex-row space-x-4">
           <div className="p-2 border rounded-xl w-fit">
             <Image
@@ -91,15 +91,15 @@ export default function JoinOurCrew() {
           </div>
           <div className="flex flex-col">
             <p className="font-semibold text-xl md:text-2xl bg-gradient-to-b from-black via-black via-[29%] to-neutral-500 bg-clip-text text-transparent dark:from-white dark:via-white dark:to-neutral-500">
-              AI Engineer - Intern
+              AI Engineer Intern
             </p>
             <p className="text-muted-foreground text-base md:text-lg font-[family-name:var(--font-geist-mono)]">
-              San Francisco, CA
+            San Francisco or New York City
             </p>
           </div>
         </div>
       </Link>
-      <Link target="_blank" href={'https://infrastackai.notion.site/Careers-at-InfraStack-AI-2f07b3b32b0740c9b16aafa09d7bd864'}>
+      <Link target="_blank" href={'https://infrastackai.notion.site/AI-Lab-Lead-d497113cc30a4d648e9408b1287ae293'}>
         <div className="flex-1 bg-background min-w-[360px] md:min-w-[460px] border glow-hover p-4 md:p-6 rounded-xl items-center flex flex-row space-x-4">
           <div className="p-2 border rounded-xl w-fit">
             <Image
@@ -116,10 +116,10 @@ export default function JoinOurCrew() {
           </div>
           <div className="flex flex-col">
             <p className="font-semibold text-xl md:text-2xl bg-gradient-to-b from-black via-black via-[29%] to-neutral-500 bg-clip-text text-transparent dark:from-white dark:via-white dark:to-neutral-500">
-              AI Engineer
+            AI Lab Lead
             </p>
             <p className="text-muted-foreground text-base md:text-lg font-[family-name:var(--font-geist-mono)]">
-              Türkiye
+              Ankara, Türkiye
             </p>
           </div>
         </div>
