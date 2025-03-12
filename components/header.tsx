@@ -85,6 +85,11 @@ export default function Header() {
           </Link>
           <div className="w-12"></div>
           <div className="flex-grow flex space-x-6 font-[family-name:var(--font-geist-mono)]">
+          <Link
+              href="/about"
+            >
+              ABOUT
+            </Link>
             <Link
               href="https://infrastackai.notion.site/Careers-at-InfraStack-AI-2f07b3b32b0740c9b16aafa09d7bd864"
               target="_blank"
