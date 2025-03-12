@@ -25,7 +25,9 @@ export default function Page() {
                         <Image src="/logo/logo-violet.svg" alt="logo" height={100} width={100} />
                     </div>
                 </div>
-                <div className="border-b border-dashed border-border md:w-[30%] w-[80%] mt-4 mb-4" />
+                <div className="relative w-[80%] md:w-[30%] mt-4 mb-4">
+                    <div className="absolute inset-0 bg-gradient-to-r from-transparent via-border to-transparent h-[1px]" />
+                </div>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                     <div className="bg-black p-4 rounded-lg">
                         <Image src="/logo/logo-big-black-bg.svg" alt="logo" height={80} width={240} />
@@ -38,14 +40,14 @@ export default function Page() {
                     </div>
                 </div>
                 <div className="h-4"></div>
-        <Link
-          href={`/media-kit.zip`}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-violet-500 flex items-center justify-start text-lg font-[family-name:var(--font-geist-sans)] hover:underline "
-        >
-          Download our media kit <Download className="h-5 w-5 inline ml-[6px]" />
-        </Link>
+                <Link
+                    href={`/media-kit.zip`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-violet-500 flex items-center justify-start text-lg font-[family-name:var(--font-geist-sans)] hover:underline "
+                >
+                    Download our media kit <Download className="h-5 w-5 inline ml-[6px]" />
+                </Link>
             </div>
         </div>
     )

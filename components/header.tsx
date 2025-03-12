@@ -8,6 +8,10 @@ import Link from "next/link";
 
 const MENU_LINKS = [
   {
+    label: "About",
+    href: "/about",
+  },
+  {
     label: "Careers",
     href: "https://infrastackai.notion.site/Careers-at-InfraStack-AI-2f07b3b32b0740c9b16aafa09d7bd864",
     target: "_blank",
@@ -61,7 +65,7 @@ export default function Header() {
             currentTheme === "light" && !scrolled && "bg-zinc-50",
             currentTheme === "light" && scrolled && "bg-background",
             scrolled &&
-              "bg-background border border-zinc-50 shadow-sm dark:bg-background dark:border-zinc-900",
+            "bg-background border border-zinc-50 shadow-sm dark:bg-background dark:border-zinc-900",
             !scrolled && "border border-transparent",
             "fixed hidden md:flex right-8 h-16 p-2 pl-4 pr-4 left-8 top-6 items-center rounded-xl justify-between z-[50]",
             "transition-all duration-500 ease-in-out"
@@ -85,7 +89,7 @@ export default function Header() {
           </Link>
           <div className="w-12"></div>
           <div className="flex-grow flex space-x-6 font-[family-name:var(--font-geist-mono)]">
-          <Link
+            <Link
               href="/about"
             >
               ABOUT
@@ -169,7 +173,7 @@ export default function Header() {
             {MENU_LINKS.map((link) => (
               <li
                 key={link.label}
-                className="text-3xl font-semibold -tracking-4 md:text-5.5xl/[3.625rem]"
+                className="text-3xl text-center font-semibold -tracking-4 md:text-5.5xl/[3.625rem]"
               >
                 <Link
                   href={link.href}
