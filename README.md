@@ -1,4 +1,4 @@
-# website_temp
+# InfraStack AI Website includes Docs and Blog as MDX pages
 
 This is a Next.js application generated with
 [Create Fumadocs](https://github.com/fuma-nama/fumadocs).
