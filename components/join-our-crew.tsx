@@ -44,7 +44,7 @@ export default function JoinOurCrew() {
       </div>
       <div className="text-muted-foreground sm:text-lg font-[family-name:var(--font-geist-mono)] w-[90%] sm:w-[70%] text-center">
         We are building a team of passionate individuals who are excited about
-        the future of AI in software operations
+        the future of AI in engineering operations
         and we need talented people like you to join us on this journey
       </div>
       <div></div>
