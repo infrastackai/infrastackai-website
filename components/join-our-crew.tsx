@@ -34,7 +34,7 @@ export default function JoinOurCrew() {
       }}
       variants={variants}
       viewport={{ once: true }}
-      className="flex flex-col space-y-3 sm:space-y-4 mb-16 md:mb-36 items-center"
+      className="flex flex-col space-y-3 pl-2 pr-2 sm:space-y-4 mb-16 md:mb-36 items-center"
     >
       <div className="">
         {/* Integrates with the tools you already use */}
