@@ -95,7 +95,7 @@ export default function Page() {
   return (
     <div className="flex-grow">
       <div className="mt-[150px] mb-[100px]  mx-auto flex flex-col items-center gap-3">
-      <div className=" bg-violet-500 rounded-lg h-[92px] w-[92px] flex items-center justify-center">
+        <div className=" bg-violet-500 rounded-lg h-[92px] w-[92px] flex items-center justify-center">
           <Milestone className="h-12 w-12 text-white" />
         </div>
         <div className="mt-2"></div>
@@ -136,45 +136,49 @@ export default function Page() {
         </p>
         <div className="mt-4"></div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          <div className="bg-[#F3F1E8] rounded-lg p-3 pl-5 pr-5 flex items-center justify-center">
-            <Image src="/investors/bowery-capital.svg" alt="logo" height={80} width={160} />
-          </div>
-          <div className="bg-black rounded-lg p-3 pl-5 pr-5 flex items-center justify-center">
-            <Image src="/investors/ripple-vc.png" alt="logo" height={80} width={160} />
-          </div>
+          <Link href={'http://bowerycap.com/'} target="_blank">
+            <div className="bg-[#F3F1E8] rounded-lg p-3 pl-5 pr-5 flex items-center justify-center">
+              <Image src="/investors/bowery-capital.svg" alt="logo" height={80} width={160} />
+            </div>
+          </Link>
+          <Link href={'https://www.rippleventures.com/'} target="_blank">
+            <div className="bg-black rounded-lg p-3 pl-5 pr-5 flex items-center justify-center">
+              <Image src="/investors/ripple-vc.png" alt="logo" height={80} width={160} />
+            </div>
+          </Link>
         </div>
         <div className="mt-1"></div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 pl-2 pr-2">
-        {investors.map((investor) => (
-          <Link key={investor.name} target="_blank" href={investor.link}>
-            <div className="flex-1 bg-background hover:bg-background/50  p-3 pl-5 pr-5 rounded-xl items-center flex flex-row space-x-4">
-              <div className="p-2 border rounded-xl w-fit">
-                <Image
-                  src={'/logo-violet.svg'}
-                  alt="InfraStack Logo"
-                  width={40}
-                  height={40}
-                  className="h-10 dark:hidden"
-                />
-                <Image
-                  src={'/logo-dark-theme.svg'}
-                  alt="InfraStack Logo"
-                  width={40}
-                  height={40}
-                  className="h-10 hidden dark:block"
-                />
+          {investors.map((investor) => (
+            <Link key={investor.name} target="_blank" href={investor.link}>
+              <div className="flex-1 bg-background hover:bg-background/50  p-3 pl-5 pr-5 rounded-xl items-center flex flex-row space-x-4">
+                <div className="p-2 border rounded-xl w-fit">
+                  <Image
+                    src={'/logo-violet.svg'}
+                    alt="InfraStack Logo"
+                    width={40}
+                    height={40}
+                    className="h-10 dark:hidden"
+                  />
+                  <Image
+                    src={'/logo-dark-theme.svg'}
+                    alt="InfraStack Logo"
+                    width={40}
+                    height={40}
+                    className="h-10 hidden dark:block"
+                  />
+                </div>
+                <div className="flex flex-col">
+                  <p className="font-semibold text-xl md:text-2xl bg-gradient-to-b from-black via-black via-[29%] to-neutral-500 bg-clip-text text-transparent dark:from-white dark:via-white dark:to-neutral-500">
+                    {investor.name}
+                  </p>
+                  <p className="text-muted-foreground text-base md:text-lg font-[family-name:var(--font-geist-mono)]">
+                    {investor.title}
+                  </p>
+                </div>
               </div>
-              <div className="flex flex-col">
-                <p className="font-semibold text-xl md:text-2xl bg-gradient-to-b from-black via-black via-[29%] to-neutral-500 bg-clip-text text-transparent dark:from-white dark:via-white dark:to-neutral-500">
-                {investor.name}
-                </p>
-                <p className="text-muted-foreground text-base md:text-lg font-[family-name:var(--font-geist-mono)]">
-                {investor.title}
-                </p>
-              </div>
-            </div>
-          </Link>
-        ))}
+            </Link>
+          ))}
         </div>
       </div>
     </div >
