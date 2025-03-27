@@ -1,6 +1,6 @@
 'use client'
 
-import { useEffect, useState } from 'react'
+import { Suspense, useEffect, useState } from 'react'
 import {
     Activity, ArrowRight, Blocks, BotMessageSquare,
     Check,
@@ -32,6 +32,7 @@ import { requestEarlyAccessSchema } from '@/lib/schemas'
 import { submitRequestEarlyAccess } from '@/app/actions'
 import { usePathname, useRouter, useSearchParams } from 'next/navigation'
 import { infrastackToast } from '@/lib/ui-utils'
+import { IconSpinnerCircle } from '@/components/ui/icons'
 
 function Submit() {
     const { pending } = useFormStatus();
@@ -43,7 +44,7 @@ function Submit() {
     )
 }
 
-export default function Client() {
+function FormContent() {
     const searchParams = useSearchParams();
     const router = useRouter();
     const pathname = usePathname();
@@ -301,4 +302,16 @@ export default function Client() {
             </form>
         </Form>
     </div>
+}
+
+export default function Client() {
+    return (
+        <Suspense fallback={
+            <div className="flex flex-col flex-grow items-center justify-center ">
+                <IconSpinnerCircle className="animate-spin h-8 text-violet-500" />
+            </div>
+        }>
+            <FormContent />
+        </Suspense>
+    );
 }
