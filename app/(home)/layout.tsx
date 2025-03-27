@@ -3,6 +3,8 @@ import Header from '@/components/header';
 import Footer from '@/components/footer';
 import type { Metadata } from 'next'
 import { siteConfig } from '@/config/site';
+import { Toaster } from "react-hot-toast";
+
  
 export const metadata: Metadata = {
   title: siteConfig.title,
@@ -62,6 +64,8 @@ export default function Layout({
   return (
     <>
       <Header />
+      <Toaster position="top-center"
+                  reverseOrder={false} />
       {children}
       <Footer />
     </>
