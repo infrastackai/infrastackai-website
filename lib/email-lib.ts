@@ -153,7 +153,7 @@ function html(params: { to: string; app: any; name: string; email: string; focus
                 style="color:#898989;text-decoration-line:none;font-family:-apple-system, BlinkMacSystemFont, &#x27;Segoe UI&#x27;, &#x27;Roboto&#x27;, &#x27;Oxygen&#x27;, &#x27;Ubuntu&#x27;, &#x27;Cantarell&#x27;, &#x27;Fira Sans&#x27;, &#x27;Droid Sans&#x27;, &#x27;Helvetica Neue&#x27;, sans-serif;font-size:14px;text-decoration:underline"
                 target="_blank"
                 >${app.name}</a
-              >, Autonomous AI for<br />Engineering Operations
+              >, Autonomous AI for Engineering Operations
             </p>
           </td>
         </tr>
