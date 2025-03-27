@@ -32,7 +32,7 @@
     --borders: #ccc;
 
     .infrastack-button {
-      @apply bg-violet-500 text-white hover:text-white hover:bg-violet-500/90 dark:bg-violet-500 dark:hover:bg-violet-500/90 h-12
+      @apply bg-violet-500 text-white hover:text-white hover:bg-violet-500/90 dark:bg-violet-500 dark:hover:bg-violet-500/90
     }
   }
 

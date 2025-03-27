@@ -3,6 +3,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { Button } from "./ui/button";
+import Link from "next/link";
 
 const transition = { duration: 1, ease: [.25, .1, .25, 1] };
 const variants = {
@@ -37,14 +38,12 @@ export default function HeroBox() {
             </motion.p>
             <div className="flex gap-4 items-center flex-row justify-center">
                 <motion.div transition={transition} variants={variants}>
-                    <Button onClick={() => {
-                        window.open(
-                            "https://cal.com/aykut-gedik-infrastack-ai/talk-to-our-team",
-                            "_blank"
-                        );
-                    }} variant="outline" size="lg" className="infrastack-button text-white h-12">
-                        Request Early Access
-                    </Button>
+                    <Link href={'/request-early-access'}>
+                        <Button onClick={() => {
+                        }} variant="outline" size="lg" className="infrastack-button text-white h-12">
+                            Request Early Access
+                        </Button>
+                    </Link>
                 </motion.div>
                 {/* <motion.div transition={transition} variants={variants}>
                     <Button variant="outline" size="lg" className="bg-violet-500 hover:bg-[#7D53DE] text-white h-12">
