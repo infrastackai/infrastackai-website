@@ -1,5 +1,6 @@
 'use server'
 
+import { sendEmail } from "@/lib/email-lib"
 import { requestEarlyAccessSchema } from "@/lib/schemas"
 import { z } from "zod"
 
@@ -17,7 +18,7 @@ export async function submitRequestEarlyAccess(formData: z.infer<typeof requestE
     }
 
     const { name, email, focus, referral, problem } = validatedFields.data
-    // make openai call to get priority
+    // TODO: make openai call to get priority
     const priority = problem === 'urgent' ? '🔴 *URGENT*' : '🟢 *MEDIUM*'
     const company = email.split('@')[1]
 
@@ -32,125 +33,125 @@ export async function submitRequestEarlyAccess(formData: z.infer<typeof requestE
     if (!webhookUrl) {
         return { error: "Slack webhook URL is not set." }
     }
-  
+
     const slackPayload = {
         "blocks": [
-          {
-            "type": "header",
-            "text": {
-              "type": "plain_text",
-              "text": "New Early Access Request",
-              "emoji": true
-            }
-          },
-          {
-            "type": "divider"
-          },
-          {
-            "type": "section",
-            "text": {
-              "type": "mrkdwn",
-              "text": "*User Information:*"
-            }
-          },
-          {
-            "type": "section",
-            "fields": [
-              {
-                "type": "mrkdwn",
-                "text": `*Name:*\n${name}`
-              },
-              {
-                "type": "mrkdwn",
-                "text": `*Company:*\n${company}`
-              },
-              {
-                "type": "mrkdwn",
-                "text": `*Email:*\n${email}`
-              },
-              {
-                "type": "mrkdwn",
-                "text": `*Priority:*\n${priority}`
-              }
-            ]
-          },
-          {
-            "type": "divider"
-          },
-          {
-            "type": "section",
-            "text": {
-              "type": "mrkdwn",
-              "text": "*Focus:*"
-            }
-          },
-          {
-            "type": "section",
-            "text": {
-              "type": "mrkdwn",
-              "text": "User selected the following options:"
-            }
-          },
-          {
-            "type": "section",
-            "fields": focusFields
-          },
-          {
-            "type": "divider"
-          },
-          {
-            "type": "section",
-            "text": {
-              "type": "mrkdwn",
-              "text": "*Problem:*"
-            }
-          },
-          {
-            "type": "section",
-            "text": {
-              "type": "mrkdwn",
-              "text": problem
-            }
-          },
-          {
-            "type": "divider"
-          },
-          {
-            "type": "context",
-            "elements": [
-              {
-                "type": "mrkdwn",
-                "text": `⏰ Submitted: ${new Date().toLocaleString('en-US', { timeZone: 'America/Los_Angeles' })} (PST)`
-              }
-            ]
-          },
-        //   {
-        //     "type": "actions",
-        //     "elements": [
-        //       {
-        //         "type": "button",
-        //         "text": {
-        //           "type": "plain_text",
-        //           "text": "Claim Request",
-        //           "emoji": true
-        //         },
-        //         "value": "claim_request",
-        //         "action_id": "claim_request"
-        //       },
-        //       {
-        //         "type": "button",
-        //         "text": {
-        //           "type": "plain_text",
-        //           "text": "View Details",
-        //           "emoji": true
-        //         },
-        //         "value": "view_details",
-        //         "action_id": "view_details"
-        //       }
-        //     ]
-        //   }
+            {
+                "type": "header",
+                "text": {
+                    "type": "plain_text",
+                    "text": "New Early Access Request",
+                    "emoji": true
+                }
+            },
+            {
+                "type": "divider"
+            },
+            {
+                "type": "section",
+                "text": {
+                    "type": "mrkdwn",
+                    "text": "*User Information:*"
+                }
+            },
+            {
+                "type": "section",
+                "fields": [
+                    {
+                        "type": "mrkdwn",
+                        "text": `*Name:*\n${name}`
+                    },
+                    {
+                        "type": "mrkdwn",
+                        "text": `*Company:*\n${company}`
+                    },
+                    {
+                        "type": "mrkdwn",
+                        "text": `*Email:*\n${email}`
+                    },
+                    {
+                        "type": "mrkdwn",
+                        "text": `*Priority:*\n${priority}`
+                    }
+                ]
+            },
+            {
+                "type": "divider"
+            },
+            {
+                "type": "section",
+                "text": {
+                    "type": "mrkdwn",
+                    "text": "*Focus:*"
+                }
+            },
+            {
+                "type": "section",
+                "text": {
+                    "type": "mrkdwn",
+                    "text": "User selected the following options:"
+                }
+            },
+            {
+                "type": "section",
+                "fields": focusFields
+            },
+            {
+                "type": "divider"
+            },
+            {
+                "type": "section",
+                "text": {
+                    "type": "mrkdwn",
+                    "text": "*Problem:*"
+                }
+            },
+            {
+                "type": "section",
+                "text": {
+                    "type": "mrkdwn",
+                    "text": problem
+                }
+            },
+            {
+                "type": "divider"
+            },
+            {
+                "type": "context",
+                "elements": [
+                    {
+                        "type": "mrkdwn",
+                        "text": `⏰ Submitted: ${new Date().toLocaleString('en-US', { timeZone: 'America/Los_Angeles' })} (PST)`
+                    }
+                ]
+            },
+            //   {
+            //     "type": "actions",
+            //     "elements": [
+            //       {
+            //         "type": "button",
+            //         "text": {
+            //           "type": "plain_text",
+            //           "text": "Claim Request",
+            //           "emoji": true
+            //         },
+            //         "value": "claim_request",
+            //         "action_id": "claim_request"
+            //       },
+            //       {
+            //         "type": "button",
+            //         "text": {
+            //           "type": "plain_text",
+            //           "text": "View Details",
+            //           "emoji": true
+            //         },
+            //         "value": "view_details",
+            //         "action_id": "view_details"
+            //       }
+            //     ]
+            //   }
         ]
-      }
+    }
 
     const response = await fetch(webhookUrl, {
         method: "POST",
@@ -158,7 +159,22 @@ export async function submitRequestEarlyAccess(formData: z.infer<typeof requestE
     })
 
     if (!response.ok) {
-        return { error: "Failed to send Slack notification." }
+        console.error('Failed to send Slack notification', response)
+    }
+
+    // use sns email to send email to support@infrastack.io as fallback
+    const emailResponse = await sendEmail({
+        to: 'hello@infrastack.ai',
+        name: name,
+        email: email,
+        focus: focus,
+        referral: referral,
+        problem: problem,
+    })
+
+    if (!emailResponse.success) {
+        console.error('Failed to send email', emailResponse)
+        return { error: 'Failed to send email' }
     }
 
     return { success: true }

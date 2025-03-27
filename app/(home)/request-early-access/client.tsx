@@ -85,19 +85,17 @@ export default function Client() {
     const onSubmit = async (data: z.infer<typeof requestEarlyAccessSchema>) => {
         try {
             // Convert Set to Array for submission
-            const useCases = Array.from(selectedCases)
-
-            // Include the selected use cases with the form data
             const formData = {
                 ...data,
-                focus: useCases
+                focus: Array.from(selectedCases) as any[]
             }
 
+            console.log('Submitting request for early access', formData)
             const res = await submitRequestEarlyAccess(formData)
             if (res.success) {
-                setSearchParams({ submit: true })
+                setSearchParams({ submit: 'true' })
             } else {
-                infrastackToast('error', 'Something went wrong!', 3000)
+                infrastackToast('error', `Something went wrong! ${res.error}`, 3000)
             }
         } catch (error) {
             infrastackToast('error', 'Something went wrong!', 3000)
@@ -108,7 +106,7 @@ export default function Client() {
         return <div className='flex flex-col flex-grow items-center justify-center '>
             <div className='text-3xl font-bold'>Thanks!</div>
             <div className='text-muted-foreground text-center'>
-                We’ve received your request and will be in touch soon.
+                We've received your request and will be in touch soon.
             </div>
         </div>
     }
@@ -123,6 +121,7 @@ export default function Client() {
             </div>
         </div>
         <Form {...form}>
+            {/* @ts-expect-error - Ignoring type mismatch between form handlers */}
             <form action={form.handleSubmit(onSubmit)} className="space-y-8">
 
                 <div className='grid grid-col-1 md:grid-col-2 gap-2 p-6 pt-2 pb-2'>

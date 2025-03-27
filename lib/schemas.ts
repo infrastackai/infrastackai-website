@@ -13,5 +13,5 @@ export const requestEarlyAccessSchema = z.object({
     }),
     focus: z.array(z.enum(["infrastructure", "sre", "devops", "secops", "finops", "productivity"])).optional().default([]),
     referral: z.enum(["friend", "colleague", "linkedin", "x", "google", "other", '']).optional().default(''),
-    problem: z.string().optional().default('').nullable()
+    problem: z.string().optional().default('')
 })

@@ -1,7 +1,7 @@
-import toast from "react-hot-toast"
+import toast, { ToastPosition } from "react-hot-toast"
 
 
-export function infrastackToast(type: string, message: string, duration: number = 2000, position: string = 'bottom-right') {
+export function infrastackToast(type: string, message: string, duration: number = 2000, position: ToastPosition = 'bottom-right') {
     if (type === 'success') {
       toast.success(message, {
         duration,
