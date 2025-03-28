@@ -33,6 +33,7 @@ import { submitRequestEarlyAccess } from '@/app/actions'
 import { usePathname, useRouter, useSearchParams } from 'next/navigation'
 import { infrastackToast } from '@/lib/ui-utils'
 import { IconSpinnerCircle } from '@/components/ui/icons'
+import posthog from 'posthog-js'
 
 function Submit() {
     const { pending } = useFormStatus();
@@ -92,6 +93,10 @@ function FormContent() {
             }
 
             console.log('Submitting request for early access', formData)
+            posthog.capture('request_early_access_submitted', {
+                ...formData,
+                focus: Array.from(selectedCases) as any[]
+            })
             const res = await submitRequestEarlyAccess(formData)
             if (res.success) {
                 setSearchParams({ submit: 'true' })
