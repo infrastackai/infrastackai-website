@@ -4,6 +4,7 @@ import { RootProvider } from 'fumadocs-ui/provider';
 import type { ReactNode } from 'react';
 import localFont from "next/font/local";
 import { Analytics } from '@vercel/analytics/next';
+import { PostHogProvider } from '@/components/PostHogProvider';
 
 
 const geistSans = localFont({
@@ -17,7 +18,6 @@ const geistMono = localFont({
   weight: "100 900",
 });
 
-
 export default function Layout({ children }: { children: ReactNode }) {
   return (
     <html lang="en" suppressHydrationWarning>
@@ -28,7 +28,9 @@ export default function Layout({ children }: { children: ReactNode }) {
           enableSystem
           disableTransitionOnChange
         >
-          <RootProvider>{children}</RootProvider>
+          <PostHogProvider>
+            <RootProvider>{children}</RootProvider>
+          </PostHogProvider>
         </ThemeProvider>
         <Analytics />
       </body>
