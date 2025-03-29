@@ -4,6 +4,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { Button } from "./ui/button";
 import Link from "next/link";
+import posthog from "posthog-js";
 
 const transition = { duration: 1, ease: [.25, .1, .25, 1] };
 const variants = {
@@ -40,6 +41,7 @@ export default function HeroBox() {
                 <motion.div transition={transition} variants={variants}>
                     <Link href={'/request-early-access'}>
                         <Button onClick={() => {
+                            posthog.capture('request_early_access_clicked')
                         }} variant="outline" size="lg" className="infrastack-button text-white h-12">
                             Request Early Access
                         </Button>
