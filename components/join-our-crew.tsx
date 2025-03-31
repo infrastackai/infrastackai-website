@@ -66,10 +66,10 @@ export default function JoinOurCrew() {
           </div>
           <div className="flex flex-col">
             <p className="font-semibold text-xl md:text-2xl bg-gradient-to-b from-black via-black via-[29%] to-neutral-500 bg-clip-text text-transparent dark:from-white dark:via-white dark:to-neutral-500">
-            Founding Engineer (#1)
+            Founding Engineer
             </p>
             <p className="text-muted-foreground text-base md:text-lg font-[family-name:var(--font-geist-mono)]">
-            San Francisco or New York City
+            San Francisco, CA
             </p>
           </div>
         </div>
@@ -94,7 +94,7 @@ export default function JoinOurCrew() {
               AI Engineer Intern
             </p>
             <p className="text-muted-foreground text-base md:text-lg font-[family-name:var(--font-geist-mono)]">
-            San Francisco or New York City
+            San Francisco, CA
             </p>
           </div>
         </div>
