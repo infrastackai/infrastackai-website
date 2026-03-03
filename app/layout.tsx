@@ -5,8 +5,8 @@ import type { Metadata } from 'next';
 import { GeistMono } from 'geist/font/mono';
 
 export const metadata: Metadata = {
-  title: 'Infrastack AI - Agentic AI Applications for Modern Software Systems',
-  description: 'A team of engineers and researchers building reliable AI agents that can observe, reason, and take action inside complex production environments.',
+  title: 'Infrastack AI',
+  description: 'Building reliable, production-grade AI systems that can observe, reason, and take action inside complex software environments.',
 };
 
 export default function RootLayout({ children }: { children: ReactNode }) {
