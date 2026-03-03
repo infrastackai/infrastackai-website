@@ -26,11 +26,11 @@ export default function LearnMore() {
       <div className="">
         {/* Integrates with the tools you already use */}
         <p className="text-center font-semibold text-4xl md:text-5xl  bg-gradient-to-b from-black via-black via-[29%] to-neutral-500 bg-clip-text text-transparent dark:from-white dark:via-white dark:to-neutral-500">
-          Learn more about InfraStack
+          Learn more about Infrastack
         </p>
       </div>
       <div className="text-muted-foreground sm:text-lg font-[family-name:var(--font-geist-mono)] w-[90%] md:w-[50%] text-center">
-        Talk to our team of experts to learn more about how InfraStack can help
+        Talk to our team of experts to learn more about how Infrastack can help
         you automate your operations
       </div>
       <div></div>

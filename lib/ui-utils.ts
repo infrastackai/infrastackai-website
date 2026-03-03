@@ -53,5 +53,5 @@ export function infrastackToast(type: string, message: string, duration: number 
   }
 
   export const buttonStyles = {
-    infrastack: "bg-violet-500 text-white hover:text-white hover:bg-violet-500/90 dark:bg-violet-500 dark:hover:bg-violet-500/90",
+    infrastack: "bg-teal-500 text-white hover:text-white hover:bg-teal-500/90 dark:bg-teal-500 dark:hover:bg-teal-500/90",
   }

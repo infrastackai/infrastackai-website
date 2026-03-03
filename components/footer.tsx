@@ -11,7 +11,7 @@ export default function Footer() {
           <a href="mailto:hello@infrastack.ai" className="hover:underline">
             hello@infrastack.ai <ArrowUpRight className="h-5 w-5 inline" />
           </a>
-          <p className="text-muted-foreground">© 2025 InfraStack AI, Inc.</p>
+          <p className="text-muted-foreground">© 2026 Infrastack AI, Inc.</p>
         </div>
         <div className="flex-grow h-12 "></div>
         <div className="flex flex-row">

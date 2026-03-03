@@ -1,10 +1,10 @@
 export const siteConfig = {
-    name: "InfraStack",
+    name: "Infrastack",
     url: "https://infrastack.ai",
     ogImage: "/preview.png",
-    title: "InfraStack AI | Autonomous AI for Engineering Operations",
+    title: "Infrastack AI | The Autonomous Enterprise",
     description:
-      "InfraStack AI transforms Engineering Operations (Infra, DevOps, SRE, SecOps) into intelligent, autonomous workflows. Automate tasks, triage alerts, detect vulnerabilities, reduce costs, and let your team focus on building, not firefighting.",
+      "AI Agents that automate entire departments, from support to operations, at a fraction of the cost. Deploy pre-built agents or build custom ones for any department.",
     links: {
       twitter: "https://twitter.com/infrastackai",
       github: "https://github.com/infrastackai",

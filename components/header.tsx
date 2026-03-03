@@ -3,18 +3,17 @@
 import { useTheme } from "next-themes";
 import { useEffect, useState } from "react";
 import { cn } from "@/lib/utils";
-import Image from "next/image";
+
 import Link from "next/link";
 
 const MENU_LINKS = [
   {
-    label: "About",
-    href: "/about",
+    label: "Agents",
+    href: "/#agents",
   },
   {
-    label: "Careers",
-    href: "https://infrastackai.notion.site/Careers-at-InfraStack-AI-2f07b3b32b0740c9b16aafa09d7bd864",
-    target: "_blank",
+    label: "About",
+    href: "/about",
   },
 ];
 
@@ -72,33 +71,21 @@ export default function Header() {
           )}
         >
           <Link href="/" className="flex items-center">
-            <Image
-              src={
-                currentTheme === "light"
-                  ? "/logo-violet.svg"
-                  : "/logo-dark-theme.svg"
-              }
-              alt="InfraStack Logo"
-              width={40}
-              height={40}
-              className="h-10"
-            />
-            <p className="text-3xl font-bold ml-1 font-[family-name:var(--font-geist-sans)]">
-              InfraStack
+            <p className="text-3xl font-bold font-[family-name:var(--font-geist-sans)]">
+              Infrastack
             </p>
           </Link>
           <div className="w-12"></div>
           <div className="flex-grow flex space-x-6 font-[family-name:var(--font-geist-mono)]">
             <Link
+              href="/#agents"
+            >
+              AGENTS
+            </Link>
+            <Link
               href="/about"
             >
               ABOUT
-            </Link>
-            <Link
-              href="https://infrastackai.notion.site/Careers-at-InfraStack-AI-2f07b3b32b0740c9b16aafa09d7bd864"
-              target="_blank"
-            >
-              CAREERS
             </Link>
           </div>
         </div>
@@ -114,19 +101,8 @@ export default function Header() {
           )}
         >
           <Link href="/" className="flex items-center">
-            <Image
-              src={
-                currentTheme === "light"
-                  ? "/logo-violet.svg"
-                  : "/logo-dark-theme.svg"
-              }
-              alt="InfraStack Logo"
-              width={32}
-              height={32}
-              className="h-8"
-            />
-            <p className="text-2xl font-bold ml-2 font-[family-name:var(--font-geist-sans)]">
-              InfraStack
+            <p className="text-2xl font-bold font-[family-name:var(--font-geist-sans)]">
+              Infrastack
             </p>
           </Link>
           <button
