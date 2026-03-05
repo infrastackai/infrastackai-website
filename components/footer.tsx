@@ -12,6 +12,7 @@ export default function Footer() {
             hello@infrastack.ai <ArrowUpRight className="h-5 w-5 inline" />
           </a>
           <p className="text-muted-foreground">© 2026 Infrastack AI, Inc.</p>
+          <p className="text-muted-foreground text-sm">SOC 2 Type II Certified</p>
         </div>
         <div className="flex-grow h-12 "></div>
         <div className="flex flex-row">

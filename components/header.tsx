@@ -3,14 +3,10 @@
 import { useTheme } from "next-themes";
 import { useEffect, useState } from "react";
 import { cn } from "@/lib/utils";
-
+import Image from "next/image";
 import Link from "next/link";
 
 const MENU_LINKS = [
-  {
-    label: "Agents",
-    href: "/#agents",
-  },
   {
     label: "About",
     href: "/about",
@@ -77,11 +73,6 @@ export default function Header() {
           </Link>
           <div className="w-12"></div>
           <div className="flex-grow flex space-x-6 font-[family-name:var(--font-geist-mono)]">
-            <Link
-              href="/#agents"
-            >
-              AGENTS
-            </Link>
             <Link
               href="/about"
             >

@@ -17,7 +17,7 @@ const features = [
   {
     icon: ShieldCheck,
     title: "Enterprise Ready",
-    description: "Bank-grade security with SOC 2 compliance and encrypted connections.",
+    description: "Bank-grade security with SOC 2 Type II compliance and isolated agent sandboxes.",
   },
   {
     icon: Timer,
@@ -50,12 +50,12 @@ export default function Features() {
       viewport={{ once: true }}
       className="flex justify-center mb-16 md:mb-36 px-4"
     >
-      <div className="grid grid-cols-2 md:grid-cols-5 gap-8 md:gap-10 max-w-[1100px]">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 md:gap-6 max-w-[1200px] w-full">
         {features.map((feature) => (
           <motion.div
             key={feature.title}
             variants={variants}
-            className="flex flex-col items-center text-center"
+            className="flex flex-col items-center text-center border rounded-xl p-6 bg-background"
           >
             <div className="bg-gray-100 dark:bg-zinc-800 rounded-xl p-3 mb-4">
               <feature.icon className="h-6 w-6" />

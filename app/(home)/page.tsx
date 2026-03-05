@@ -5,7 +5,6 @@ import LearnMore from "@/components/learn-more";
 
 import Integrations from "@/components/integrations";
 import Features from "@/components/features";
-import Agents from "@/components/agents";
 import HeroBox from "@/components/hero-box";
 
 export default function HomePage() {
@@ -25,7 +24,6 @@ export default function HomePage() {
         <HeroBox />
       </div>
       <Features />
-      <Agents />
       <Integrations />
       <LearnMore />
     </div>
