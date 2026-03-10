@@ -17,9 +17,9 @@ export default function Footer() {
               <ArrowUpRight className="h-4 w-4" />
             </a>
             <p className="text-sm text-muted-foreground">San Francisco, CA</p>
-            <div className="flex items-center gap-3 text-sm text-muted-foreground">
+            <div className="flex flex-col md:flex-row md:items-center gap-1 md:gap-3 text-sm text-muted-foreground">
               <span>© 2026 Infrastack AI, Inc.</span>
-              <span>·</span>
+              <span className="hidden md:inline">·</span>
               <span>SOC 2 Type II Certified</span>
             </div>
           </div>
