@@ -1,6 +1,6 @@
 import { ThemeProvider } from '@/components/theme-provider';
 import './global.css';
-import { RootProvider } from 'fumadocs-ui/provider';
+
 import type { ReactNode } from 'react';
 import localFont from "next/font/local";
 import { Analytics } from '@vercel/analytics/next';
@@ -42,7 +42,7 @@ export default function Layout({ children }: { children: ReactNode }) {
           disableTransitionOnChange
         >
           <PostHogProvider>
-            <RootProvider>{children}</RootProvider>
+            {children}
           </PostHogProvider>
         </ThemeProvider>
         <Analytics />

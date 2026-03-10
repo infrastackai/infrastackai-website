@@ -144,7 +144,6 @@ export default function Header() {
               >
                 <Link
                   href={link.href}
-                  target={link.target}
                   className="font-semibold trackin bg-clip-text text-zinc-600 dark:text-zinc-300"
                   onClick={() => setMobileMenuOpen(false)}
                 >
