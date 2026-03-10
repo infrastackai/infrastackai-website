@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import { Button } from "./ui/button";
 import { Headset } from "lucide-react";
 import posthog from "posthog-js";
+import { useCalEmbed } from "@/hooks/use-cal";
 
 const transition = { duration: 1, ease: [.25, .1, .25, 1] };
 const variants = {
@@ -15,6 +16,7 @@ const variants = {
 const text = "The Autonomous Enterprise.";
 
 export default function HeroBox() {
+    const openCal = useCalEmbed();
     const words = text.split(" ");
 
     return (
@@ -42,7 +44,7 @@ export default function HeroBox() {
                 <motion.div transition={transition} variants={variants}>
                     <Button onClick={() => {
                         posthog.capture('book_a_demo_clicked')
-                        window.open('https://cal.com/aykut-gedik-infrastack-ai/talk-to-our-team', '_blank')
+                        openCal()
                     }} variant="outline" size="lg" className="infrastack-button text-white h-12">
                         <Headset /> Talk to our team
                     </Button>

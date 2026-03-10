@@ -67,7 +67,7 @@ export default function Page() {
         <p className="text-lg md:text-xl leading-relaxed text-muted-foreground">
           Connect with us on{" "}
           <Link
-            href="https://www.linkedin.com/company/infrastack-ai"
+            href="https://www.linkedin.com/company/infrastackai"
             target="_blank"
             rel="noopener noreferrer"
             className="text-foreground font-semibold hover:underline"

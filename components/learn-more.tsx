@@ -1,8 +1,9 @@
 "use client";
 
 import { Button } from "@/components/ui/button";
-import { Headset, Slack } from "lucide-react";
+import { Headset } from "lucide-react";
 import { motion } from "framer-motion";
+import { useCalEmbed } from "@/hooks/use-cal";
 
 const variants = {
   hidden: { filter: "blur(10px)", transform: "translateY(20%)", opacity: 0 },
@@ -10,6 +11,7 @@ const variants = {
 };
 
 export default function LearnMore() {
+  const openCal = useCalEmbed();
   return (
     <motion.div
       initial="hidden"
@@ -36,12 +38,7 @@ export default function LearnMore() {
       <div></div>
       <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4">
         <Button
-          onClick={() => {
-            window.open(
-              "https://cal.com/aykut-gedik-infrastack-ai/talk-to-our-team",
-              "_blank"
-            );
-          }}
+          onClick={() => openCal()}
           variant="default"
           size="lg"
           className="infrastack-button"
