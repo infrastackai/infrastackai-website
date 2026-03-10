@@ -17,7 +17,7 @@ const features = [
   {
     icon: ShieldCheck,
     title: "Enterprise Ready",
-    description: "Bank-grade security with SOC 2 Type II compliance and isolated agent sandboxes.",
+    description: "Bank-grade security with SOC 2 Type II compliance and isolated agent environments.",
   },
   {
     icon: Timer,
