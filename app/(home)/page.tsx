@@ -13,7 +13,13 @@ export default function HomePage() {
           AI SRE agents. Heads-down on the next thing.
         </p>
 
-        <div className="text-base md:text-lg flex items-center gap-4">
+        <div className="text-base md:text-lg flex items-center gap-4 flex-wrap">
+          <Link href="/jobs" className="hover:underline">
+            Jobs
+          </Link>
+          <span className="text-zinc-400" aria-hidden="true">
+            •
+          </span>
           <Link href="/about" className="hover:underline">
             About
           </Link>
