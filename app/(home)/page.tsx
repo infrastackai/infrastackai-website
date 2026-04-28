@@ -1,31 +1,30 @@
-import FlickeringGrid from "@/components/ui/flickering-grid";
-import HeroBoxComingSoon from "@/components/hero-box-coming-soon";
-
-import LearnMore from "@/components/learn-more";
-
-import Integrations from "@/components/integrations";
-import Features from "@/components/features";
-import HeroBox from "@/components/hero-box";
+import Link from "next/link";
 
 export default function HomePage() {
   return (
-    <div className="flex-grow flex flex-col font-[family-name:var(--font-geist-sans)]">
-      <div className="relative w-full h-[550px] md:h-[450px] lg:h-[400px] mt-[84px] md:mt-[104px] mb-8 md:mb-16 overflow-hidden flex items-center justify-center flex-col">
-        <div className="absolute inset-0">
-          <FlickeringGrid
-            className="z-0 size-full"
-            squareSize={4}
-            gridGap={6}
-            color="#9CA3AF"
-            maxOpacity={0.5}
-            flickerChance={0.1}
-          />
+    <main className="min-h-screen flex items-center justify-center px-6">
+      <div className="max-w-xl w-full space-y-8">
+        <h1 className="text-2xl md:text-3xl font-medium tracking-tight">
+          Infrastack is between chapters.
+        </h1>
+
+        <p className="text-base md:text-lg leading-relaxed text-zinc-600">
+          We spent the last two years building an AI observability platform and
+          AI SRE agents. Heads-down on the next thing.
+        </p>
+
+        <div className="text-base md:text-lg flex items-center gap-4">
+          <Link href="/about" className="hover:underline">
+            About
+          </Link>
+          <span className="text-zinc-400" aria-hidden="true">
+            •
+          </span>
+          <a href="mailto:aykut@infrastack.ai" className="hover:underline">
+            aykut@infrastack.ai
+          </a>
         </div>
-        <HeroBox />
       </div>
-      <Features />
-      <Integrations />
-      <LearnMore />
-    </div>
+    </main>
   );
 }

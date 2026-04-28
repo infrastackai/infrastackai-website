@@ -25,18 +25,9 @@ export default function Page() {
   ];
 
   return (
-    <div className="flex-grow">
-      <div className="mt-[140px] mb-[100px] mx-auto max-w-3xl px-6">
-        <h1 className="text-4xl md:text-5xl font-bold tracking-tight mb-8">
-          ABOUT INFRASTACK
-        </h1>
-
-        <p className="text-lg md:text-xl leading-relaxed text-muted-foreground mb-8">
-          Our vision is a future where AI agents run entire business operations, so humans
-          can focus on strategy, creativity, and growth.
-        </p>
-
-        <p className="text-lg md:text-xl leading-relaxed text-muted-foreground mb-8">
+    <main className="min-h-screen flex items-center justify-center px-6 py-20">
+      <div className="max-w-xl w-full space-y-8">
+        <p className="text-base md:text-lg leading-relaxed text-zinc-600">
           Infrastack is backed by experienced founders, operators, and investors including{" "}
           {investors.map((investor, index) => (
             <span key={investor.name}>
@@ -45,12 +36,12 @@ export default function Page() {
                   href={investor.link}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-foreground font-semibold hover:underline"
+                  className="text-zinc-900 font-medium hover:underline"
                 >
                   {investor.name}
                 </Link>
               ) : (
-                <span className="text-foreground font-semibold">{investor.name}</span>
+                <span className="text-zinc-900 font-medium">{investor.name}</span>
               )}
               {index < investors.length - 2 && ", "}
               {index === investors.length - 2 && ", and "}
@@ -59,32 +50,12 @@ export default function Page() {
           .
         </p>
 
-        <p className="text-lg md:text-xl leading-relaxed text-muted-foreground mb-12">
-          We&apos;re building Infrastack for enterprises that are ready to automate entire
-          departments and let operations run themselves.
-        </p>
-
-        <p className="text-lg md:text-xl leading-relaxed text-muted-foreground">
-          Connect with us on{" "}
-          <Link
-            href="https://www.linkedin.com/company/infrastackai"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-foreground font-semibold hover:underline"
-          >
-            LinkedIn
+        <div className="text-sm text-zinc-500">
+          <Link href="/" className="hover:underline">
+            ← Back
           </Link>
-          {" "}or{" "}
-          <Link
-            href="https://x.com/infrastackai"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-foreground font-semibold hover:underline"
-          >
-            X
-          </Link>
-        </p>
+        </div>
       </div>
-    </div>
+    </main>
   );
 }
