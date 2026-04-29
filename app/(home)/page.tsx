@@ -10,7 +10,7 @@ export default function HomePage() {
 
         <p className="text-base md:text-lg leading-relaxed text-zinc-600">
           We spent the last two years building an AI observability platform and
-          AI SRE agents. Heads-down on the next thing.
+          AI SRE agents. Now we&apos;re heads-down on what comes next.
         </p>
 
         <div className="text-base md:text-lg flex items-center gap-4 flex-wrap">
